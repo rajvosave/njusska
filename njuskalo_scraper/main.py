@@ -6,8 +6,8 @@ This script scrapes vehicle listings from njuskalo.hr auto-oglasi category
 and saves the data to a JSON file.
 
 Usage:
-    python main.py                                          # Scrape default URL (auto-oglasi)
-    python main.py https://www.njuskalo.hr/auto-oglasi      # Scrape specific URL
+    python main.py                                          # Scrape default URL (auti)
+    python main.py https://www.njuskalo.hr/auti             # Scrape specific URL
     python main.py https://example.com/listings             # Scrape any URL
 """
 

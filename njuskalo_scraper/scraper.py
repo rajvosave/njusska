@@ -1,11 +1,14 @@
 import asyncio
 import json
 import logging
+import re
 from datetime import datetime
 from typing import List, Dict, Any
 from pathlib import Path
+from urllib.parse import urljoin
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
+from bs4 import BeautifulSoup
 
 # Configure logging
 logging.basicConfig(
@@ -26,6 +29,7 @@ class NjuskaloAutoScraper:
         """
         self.output_file = output_file
         self.listings: List[Dict[str, Any]] = []
+        self.last_full_html: str = ""
         
     async def scrape(self, url: str) -> bool:
         """Scrape a njuskalo.hr auto listings page.
@@ -45,12 +49,46 @@ class NjuskaloAutoScraper:
         # Configure crawl parameters
         run_config = CrawlerRunConfig(
             cache_mode=CacheMode.BYPASS,  # Don't use cache
-            wait_for="document.readyState == 'complete'",  # Wait for full page load
-            wait_for_images=True,  # Wait for images to load
+            wait_until="networkidle",
+            wait_for="js:() => document.querySelectorAll('article, [class*=\"EntityList\"], [class*=\"listing\"], [data-testid*=\"listing\"]').length > 0",  # Wait for listing-like nodes
+            wait_for_timeout=45000,
             simulate_user=True,  # Simulate human-like behavior
-            delay_before_return_html=3,  # Increase delay to let JS run
-            css_selector=".entity_container, .listingItem, [data-listing], .listing",  # Try multiple selectors
-            page_timeout=90000,  # Increase page timeout
+            delay_before_return_html=2,  # Add delay to let JS finish
+            word_count_threshold=10,  # Only extract if page has meaningful content
+            remove_consent_popups=True,
+            remove_overlay_elements=True,
+            js_code_before_wait=[
+                """
+                (() => {
+                    const selectors = [
+                        'button[aria-label*="Prihvati i zatvori"]',
+                        'button[aria-label*="Prihvati"]',
+                        '#didomi-notice-agree-button',
+                        'button[id*="agree"]'
+                    ];
+                    for (const sel of selectors) {
+                        try {
+                            const el = document.querySelector(sel);
+                            if (el) {
+                                el.click();
+                                return true;
+                            }
+                        } catch (_) {
+                            // Ignore invalid selectors and continue.
+                        }
+                    }
+
+                    // Fallback by visible text content.
+                    const buttons = Array.from(document.querySelectorAll('button'));
+                    const accept = buttons.find((btn) => /prihvati/i.test((btn.textContent || '').trim()));
+                    if (accept) {
+                        accept.click();
+                        return true;
+                    }
+                    return false;
+                })();
+                """
+            ],
         )
         
         try:
@@ -99,11 +137,22 @@ class NjuskaloAutoScraper:
         # Store the raw markdown content for analysis
         # In a production setup, you would parse the HTML more intelligently
         # For now, we'll store the page metadata and raw content
+        extracted_titles: List[str] = []
+        if result.markdown:
+            extracted_titles = self._extract_listing_titles_from_markdown(result.markdown)
+
+        listing_items = self._extract_listing_items_from_html(result.html, result.url)
+        self.last_full_html = result.html or ""
+
         listing = {
             "metadata": metadata,
             "raw_content_preview": result.markdown[:500] if result.markdown else "",
             "raw_html_length": len(result.html) if result.html else 0,
             "raw_html": result.html[:2000] if result.html else "",  # Store first 2KB for debugging
+            "sample_listing_titles": extracted_titles[:20],
+            "sample_listing_titles_count": len(extracted_titles),
+            "extracted_listings_count": len(listing_items),
+            "extracted_listings_sample": listing_items[:30],
         }
         
         # If we have extracted markdown, try to identify individual listings
@@ -120,6 +169,108 @@ class NjuskaloAutoScraper:
         
         self.listings.append(listing)
         logger.info(f"Parsed page listing. Total listings: {len(self.listings)}")
+
+    def _extract_listing_titles_from_markdown(self, markdown: str) -> List[str]:
+        """Extract listing titles from markdown links that point to oglas pages."""
+        # Typical listing links contain /oglas- in the URL.
+        pattern = re.compile(r"\[(?P<title>[^\]]+)\]\((?P<url>https?://[^)]+/oglas-[^)]+)\)")
+        titles: List[str] = []
+        seen = set()
+        for match in pattern.finditer(markdown):
+            title = match.group("title").strip()
+            if title and title not in seen:
+                seen.add(title)
+                titles.append(title)
+        return titles
+
+    def _extract_listing_items_from_html(self, html: str, base_url: str) -> List[Dict[str, Any]]:
+        """Extract listing links from HTML.
+
+        This targets njuskalo ad URLs containing -oglas-.
+        """
+        if not html:
+            return []
+
+        soup = BeautifulSoup(html, "lxml")
+        items: List[Dict[str, Any]] = []
+        seen_urls = set()
+
+        for link in soup.find_all("a", href=True):
+            href = link.get("href", "").strip()
+            if "-oglas-" not in href:
+                continue
+
+            full_url = urljoin(base_url, href)
+            if full_url in seen_urls:
+                continue
+
+            title = link.get_text(" ", strip=True)
+            if not title:
+                title = (link.get("title") or "").strip()
+            if not title:
+                continue
+
+            # Find the listing card/container to extract structured fields.
+            container = None
+            node = link
+            for _ in range(8):
+                node = node.parent
+                if node is None:
+                    break
+                if node.name == "article":
+                    container = node
+                    break
+
+            if container is None:
+                container = link.parent
+
+            card_text = " ".join(container.get_text(" ", strip=True).split()) if container else ""
+            year, location, price = self._extract_listing_details_from_text(card_text)
+
+            seen_urls.add(full_url)
+            items.append({
+                "title": title,
+                "url": full_url,
+                "price": price,
+                "location": location,
+                "year": year,
+            })
+
+        return items
+
+    def _extract_listing_details_from_text(self, text: str) -> tuple[Any, str, str]:
+        """Extract year, location and price from listing card text."""
+        year = None
+        location = ""
+        price = ""
+
+        year_match = re.search(r"Godište automobila:\s*(\d{4})", text)
+        if year_match:
+            year = int(year_match.group(1))
+
+        location_match = re.search(
+            r"Lokacija vozila:\s*(.+?)(?:\s+Financiranje\b|\s+Objavljen:\b|\s+Prikaži na mapi\b|$)",
+            text,
+            flags=re.IGNORECASE,
+        )
+        if location_match:
+            location = location_match.group(1).strip()
+
+        # Prefer the highest euro amount in the card text, which is typically the main listing price.
+        amount_matches = re.findall(r"(\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s*€)", text)
+        if amount_matches:
+            best = max(amount_matches, key=self._price_sort_key)
+            price = best.strip()
+
+        return year, location, price
+
+    def _price_sort_key(self, amount: str) -> float:
+        """Convert localized euro amount to numeric sort key."""
+        normalized = amount.replace("€", "").replace(".", "").replace(" ", "").replace(",", ".")
+        try:
+            return float(normalized)
+        except ValueError:
+            return 0.0
     
     def save_output(self) -> str:
         """Save scraped listings to JSON file.
@@ -146,13 +297,11 @@ class NjuskaloAutoScraper:
             logger.info(f"Output saved to {output_path}")
             
             # Also save raw HTML for debugging if available
-            if self.listings and len(self.listings) > 0:
-                first_listing = self.listings[0]
-                if "raw_html" in first_listing and first_listing["raw_html"]:
-                    html_file = output_path.parent / "debug_raw.html"
-                    with open(html_file, 'w', encoding='utf-8') as f:
-                        f.write(first_listing["raw_html"])
-                    logger.info(f"Raw HTML saved to {html_file} for debugging")
+            if self.last_full_html:
+                html_file = output_path.parent / "debug_raw.html"
+                with open(html_file, 'w', encoding='utf-8') as f:
+                    f.write(self.last_full_html)
+                logger.info(f"Raw HTML saved to {html_file} for debugging")
             
             return str(output_path)
             
@@ -169,7 +318,7 @@ async def main(url: str = None):
     """
     # URL for njuskalo.hr auto listings (default)
     if url is None:
-        url = "https://www.njuskalo.hr/auto-oglasi"
+        url = "https://www.njuskalo.hr/auti"
     
     # Initialize scraper
     scraper = NjuskaloAutoScraper(output_file="njuskalo_auto_listings.json")

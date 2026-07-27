@@ -1,6 +1,6 @@
 {
   "scrape_metadata": {
-    "timestamp": "2026-07-27T22:08:24.462903",
+    "timestamp": "2026-07-27T22:17:49.492920",
     "total_pages_scraped": 1,
     "listings_count": 1
   },
@@ -8,17 +8,233 @@
     {
       "metadata": {
         "url": "https://www.njuskalo.hr/auti/nissan-qashqai",
-        "title": "N/A",
-        "description": "",
-        "scraped_at": "2026-07-27T22:08:24.363663",
+        "title": "Nissan Qashqai vozila - Nissan Qashqai oglasi - Njuškalo",
+        "description": "Nissan Qashqai vozila: prodaja Nissan Qashqai auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Nissan Qashqai automobila",
+        "scraped_at": "2026-07-27T22:17:49.395974",
         "success": true,
         "status_code": 200
       },
-      "raw_content_preview": "\n",
-      "raw_html_length": 40,
+      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/nissan-qashqai#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Nissan](https://www.njuskalo.hr/auti/nissan)\n  * [**Qashqai**](https://www.njuskalo.hr/auti/nissan-qashqai)\n\n\n#  **Nissan Qashqai**\nNissan Qashqai vozila: prodaja N",
+      "raw_html_length": 353850,
+      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js BannerHelper--sticky\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Nissan Qashqai vozila - Nissan Qashqai oglasi - Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Cs2_0Q6vC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/28jjxBGe2.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BFDo_7ljB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel",
+      "sample_listing_titles": [],
+      "sample_listing_titles_count": 0,
+      "extracted_listings_count": 30,
+      "extracted_listings_sample": [
+        {
+          "title": "Nissan Qashqai 1,5 dCi",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-oglas-50655305",
+          "price": "14.999 €",
+          "location": "Varaždin, Jalkovečka",
+          "year": 2018
+        },
+        {
+          "title": "Nissan Qashqai 1,3 DIG-T MHEV Tekna X-Tronic",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-mhev-tekna-x-tronic-oglas-50258861",
+          "price": "24.450 €",
+          "location": "",
+          "year": 2022
+        },
+        {
+          "title": "Nissan Qashqai 1,7 DCI 150ks SERV.,NAVI.,LED.,XENON,PANO.,KAM.360",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.7-dci-150ks-serv-navi-led-xenon-pano-kam-360-oglas-46832850",
+          "price": "15.600 €",
+          "location": "Krapina, Centar",
+          "year": 2019
+        },
+        {
+          "title": "Nissan Qashqai 1.3 HIBRID 57 TKM SERVISNA LED  NAVI KAMERA 360  XENON",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-41-tkm-servisna-led-svjetla-top-stanj-2022-gode-oglas-44560286",
+          "price": "22.999 €",
+          "location": "Osijek, Retfala",
+          "year": 2023
+        },
+        {
+          "title": "Nissan Qashqai 1.5 automatik",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-automatik-oglas-49494814",
+          "price": "26.500 €",
+          "location": "Stenjevec, Špansko",
+          "year": 2023
+        },
+        {
+          "title": "Nissan Qashqai 1,3 DIG-T CONECTA 140 ks",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-conecta-140-ks-oglas-50814079",
+          "price": "18.900 €",
+          "location": "Sveti Ivan Zelina, Brezovec Zelinski",
+          "year": 2021
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi KARTICE-GARANCIJA AKCIJA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-kartice-garancija-oglas-50917791",
+          "price": "8.799 €",
+          "location": "Sisak - Okolica, Stara Drenčina",
+          "year": 2014
+        },
+        {
+          "title": "Nissan Qashqai 1.6 Dci*REDIZAJN*N-CONNECTA*NAVI*KAMERA 360%*PANORAMA*",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-redizajn-n-connecta-navi-kamera-360-panorama-oglas-50481263",
+          "price": "14.999 €",
+          "location": "Sesvete, Sopnica",
+          "year": 2017
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi  N-Connecta",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-n-connecta-oglas-51039602",
+          "price": "16.999 €",
+          "location": "Osijek, Zeleno polje",
+          "year": 2019
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi N-Connecta",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-n-connecta-oglas-51016695",
+          "price": "15.499 €",
+          "location": "Osijek, Zeleno polje",
+          "year": 2019
+        },
+        {
+          "title": "Nissan Qashqai 1.3-N CONNECTA-DVOBOJAN-KAMERA 360-VELIKA MEDIA-LED",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-n-connecta-dvobojan-kamera-360-velika-media-led-oglas-51003829",
+          "price": "22.999 €",
+          "location": "Osijek - Okolica, Josipovac",
+          "year": 2022
+        },
+        {
+          "title": "Nissan Qashqai 1,3 DIG-T automatik Tekna+ LED-ALU-KAMERA 360-PANORAMA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-automatik-tekna-led-alu-kamera-360-panorama-oglas-50666313",
+          "price": "23.900 €",
+          "location": "Osijek - Okolica, Josipovac",
+          "year": 2021
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi, N-TEC, panorama, parkirna kamera",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-oglas-50848524",
+          "price": "5.750 €",
+          "location": "Hrvatska Dubica, Hrvatska Dubica",
+          "year": 2010
+        },
+        {
+          "title": "Nissan Qashqai 1,2 DIG-T automatik(PANORAMA/ALKANTARA/PARKING KAMERA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-dig-t-automatik-oglas-51074100",
+          "price": "12.990 €",
+          "location": "Rijeka, Srdoči",
+          "year": 2017
+        },
+        {
+          "title": "Nissan Qashqai 1,5dCi TEKNA+  AUTOMAT,ACC,PANORAMA,MEMORIJA,360°KAMERA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5dci-tekna-automat-acc-panorama-memorija-360-kamera-oglas-51073914",
+          "price": "17.999 €",
+          "location": "Osijek, Industrijska zona (Čepinska)",
+          "year": 2020
+        },
+        {
+          "title": "NISSAN QASHQAI 1,5 DCI • REG.12/2026. • FULL OPREMA TEKNA • ODLIČAN",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-reg-12-2026-full-tekna-top-stanje-oglas-50758575",
+          "price": "10.700 €",
+          "location": "Split, Šine",
+          "year": 2014
+        },
+        {
+          "title": "Nissan Qashqai 1,2 Tekna 360°",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-tekna-360-oglas-50989207",
+          "price": "11.490 €",
+          "location": "Velika Gorica - Okolica, Velika Mlaka",
+          "year": 2015
+        },
+        {
+          "title": "Nissan Qashqai 1,2 Tekna 360°",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-tekna-360-oglas-50910253",
+          "price": "11.190 €",
+          "location": "Velika Gorica - Okolica, Velika Mlaka",
+          "year": 2015
+        },
+        {
+          "title": "Nissan Qashqai 1,2 DIG-T facelift N-Connecta",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-dig-t-facelift-n-connecta-oglas-50743274",
+          "price": "12.990 €",
+          "location": "Velika Gorica - Okolica, Velika Mlaka",
+          "year": 2018
+        },
+        {
+          "title": "Nissan Qashqai 1.6 DCI  146tkm  Reg 1 god.  Super stanje  (zamjena)",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-145tkm-navi-kamera-tempomat-pdc-grij-sjedala-oglas-50192960",
+          "price": "10.999 €",
+          "location": "Slavonski Brod, Centar",
+          "year": 2014
+        },
+        {
+          "title": "Nissan Qashqai 1,6 dCi Servisna,1 vlasnik Navi,Kamera,Dva seta kotača",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-navi-kamera-grijanje-sjedala-servisna-oglas-50492494",
+          "price": "10.900 €",
+          "location": "Velika Gorica, Kokotovo naselje",
+          "year": 2014
+        },
+        {
+          "title": "Nissan Qashqai 1,6 dCi / 4x4 / NAVI / XENON / ALU / PDC / REG 3-2027",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-4x4-navi-xenon-alu-pdc-reg-3-2027-oglas-50996905",
+          "price": "10.750 €",
+          "location": "Sesvete, Kraljevečki Novaki",
+          "year": 2014
+        },
+        {
+          "title": "Nissan Qashqai 1,3 DIG-T",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-oglas-50948843",
+          "price": "20.000 €",
+          "location": "Čakovec, Jug",
+          "year": 2019
+        },
+        {
+          "title": "Nissan Qashqai 1.3 /158 ks AUTOMATIK - PRVI VLASNIK - SERVISNA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-158-ks-automatik-prvi-vlasnik-oglas-51058265",
+          "price": "17.650 €",
+          "location": "Koprivnica, Centar",
+          "year": 2022
+        },
+        {
+          "title": "Nissan Qashqai 1,7dci, 150ks, N-Connecta, EKSTRA STANJE",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.7dci-150ks-n-connecta-ekstra-stanje-oglas-50933132",
+          "price": "17.000 €",
+          "location": "Trnje, Trnje",
+          "year": 2019
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi TEKNA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-tekna-oglas-51006730",
+          "price": "15.599 €",
+          "location": "Samobor, Južno naselje",
+          "year": 2018
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi N-Connecta,Led,Panorama,Navi,Servis,Garancija",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-n-connecta-led-panorama-navi-servis-garancija-oglas-49265473",
+          "price": "17.900 €",
+          "location": "Kastav, Rubeši",
+          "year": 2019
+        },
+        {
+          "title": "Nissan Qashqai 1.3 DIG-T N-Connecta,1vlasnik,LEASING BEZ UČEŠĆA",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-n-connecta-1vlasnik-leasing-bez-ucesca-oglas-50820920",
+          "price": "24.900 €",
+          "location": "Kastav, Rubeši",
+          "year": 2024
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi,Veliki servis",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-reg-08-2025-oglas-47002801",
+          "price": "7.900 €",
+          "location": "Kastav, Rubeši",
+          "year": 2013
+        },
+        {
+          "title": "Nissan Qashqai 1,5 dCi panorama | led | navigacija",
+          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-oglas-50255901",
+          "price": "17.900 €",
+          "location": "Sesvete, Sesvete",
+          "year": 2019
+        }
+      ],
       "extracted_content": {
-        "lines_count": 2,
-        "content_preview": "\n"
+        "lines_count": 517,
+        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/nissan-qashqai#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Nissan](https://www.njuskalo.hr/auti/nissan)\n  * [**Qashqai**](https://www.njuskalo.hr/auti/nissan-qashqai)\n\n\n#  **Nissan Qashqai**\nNissan Qashqai vozila: prodaja Nissan Qashqai auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Nissan Qashqai automobila.\nPozicioniranje na listi može biti određeno različitim parametrima. [Saznaj više](https://www.njuskalo.hr/help/kontakt-i-pomoc/njuskalo-osnove/pozicioniranje-oglasa-cid375)\n  * [**1**](https://www.njuskalo.hr/auti/nissan-qashqai)\n  * [2](https://www.njuskalo.hr/auti/nissan-qashqai?page=2)\n  * [3](https://www.njuskalo.hr/auti/nissan-qashqai?page=3)\n  * [4](https://www.njuskalo.hr/auti/nissan-qashqai?page=4)\n  * [5](https://www.njuskalo.hr/auti/nissan-qashqai?page=5)\n  * [6](https://www.njuskalo.hr/auti/nissan-qashqai?page=6)"
       }
     }
   ]
