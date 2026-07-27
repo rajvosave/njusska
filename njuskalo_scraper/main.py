@@ -6,19 +6,54 @@ This script scrapes vehicle listings from njuskalo.hr auto-oglasi category
 and saves the data to a JSON file.
 
 Usage:
-    python main.py                                          # Scrape default URL (auti)
+    python main.py                                          # Scrape default URL (auti), visible browser
+    python main.py --no-headless                            # Scrape with visible browser
+    python main.py --fallback-visible-on-block "URL"       # Headless first, then visible fallback if blocked
     python main.py https://www.njuskalo.hr/auti             # Scrape specific URL
-    python main.py https://example.com/listings             # Scrape any URL
+    python main.py https://example.com/listings --headless  # Scrape any URL with explicit headless
 """
 
-import sys
+import argparse
 from scraper import main
 import asyncio
 
+
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(description="Scrape njuskalo listings with crawl4AI")
+    parser.add_argument(
+        "url",
+        nargs="?",
+        default=None,
+        help="URL to scrape (defaults to https://www.njuskalo.hr/auti)",
+    )
+    parser.add_argument(
+        "--headless",
+        dest="headless",
+        action="store_true",
+        default=False,
+        help="Run browser without UI",
+    )
+    parser.add_argument(
+        "--no-headless",
+        dest="headless",
+        action="store_false",
+        help="Run browser with visible UI",
+    )
+    parser.add_argument(
+        "--fallback-visible-on-block",
+        action="store_true",
+        help="When blocked in headless mode, retry that page once in visible mode",
+    )
+    return parser.parse_args()
+
 if __name__ == "__main__":
-    # Get URL from command-line argument if provided
-    url = None
-    if len(sys.argv) > 1:
-        url = sys.argv[1]
-    
-    asyncio.run(main(url))
+    args = parse_args()
+    ok = asyncio.run(
+        main(
+            args.url,
+            headless=args.headless,
+            fallback_visible_on_block=args.fallback_visible_on_block,
+        )
+    )
+    raise SystemExit(0 if ok else 1)

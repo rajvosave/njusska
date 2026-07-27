@@ -5,7 +5,7 @@ import re
 from datetime import datetime
 from typing import List, Dict, Any
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse, parse_qsl, urlencode, urlunparse
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 from bs4 import BeautifulSoup
@@ -21,13 +21,22 @@ logger = logging.getLogger(__name__)
 class NjuskaloAutoScraper:
     """Scraper for njuskalo.hr auto-oglasi (vehicle listings)."""
     
-    def __init__(self, output_file: str = "listings.json"):
+    def __init__(
+        self,
+        output_file: str = "listings.json",
+        headless: bool = False,
+        fallback_visible_on_block: bool = False,
+    ):
         """Initialize the scraper with output file configuration.
         
         Args:
             output_file: Path to save JSON output
+            headless: Whether to run browser in headless mode
+            fallback_visible_on_block: Retry blocked pages in visible browser mode
         """
         self.output_file = output_file
+        self.headless = headless
+        self.fallback_visible_on_block = fallback_visible_on_block
         self.listings: List[Dict[str, Any]] = []
         self.last_full_html: str = ""
         
@@ -42,16 +51,17 @@ class NjuskaloAutoScraper:
         """
         # Configure browser with anti-bot measures
         browser_config = BrowserConfig(
-            headless=False,  # Set to False to see the browser window
+            headless=self.headless,
             verbose=True,    # Enable verbose logging
         )
         
         # Configure crawl parameters
         run_config = CrawlerRunConfig(
             cache_mode=CacheMode.BYPASS,  # Don't use cache
-            wait_until="networkidle",
+            wait_until="domcontentloaded",
             wait_for="js:() => document.querySelectorAll('article, [class*=\"EntityList\"], [class*=\"listing\"], [data-testid*=\"listing\"]').length > 0",  # Wait for listing-like nodes
             wait_for_timeout=45000,
+            page_timeout=120000,
             simulate_user=True,  # Simulate human-like behavior
             delay_before_return_html=2,  # Add delay to let JS finish
             word_count_threshold=10,  # Only extract if page has meaningful content
@@ -93,24 +103,165 @@ class NjuskaloAutoScraper:
         
         try:
             logger.info(f"Starting crawl of {url}")
+            start_url = self._normalize_url(url)
+            if start_url != url:
+                logger.info(f"Normalized URL: {start_url}")
             
             async with AsyncWebCrawler(config=browser_config) as crawler:
-                result = await crawler.arun(url=url, config=run_config)
-                
-                if not result.success:
-                    logger.error(f"Crawl failed: {result.status_code}")
+                queue = [start_url]
+                crawled = set()
+                max_pages = 100
+
+                while queue and len(crawled) < max_pages:
+                    current_url = queue.pop(0)
+                    if current_url in crawled:
+                        continue
+
+                    logger.info(f"Crawling page {len(crawled) + 1}: {current_url}")
+                    result = await crawler.arun(url=current_url, config=run_config)
+
+                    if not result.success:
+                        logger.warning(f"Retrying failed page with relaxed config: {current_url}")
+                        retry_config = CrawlerRunConfig(
+                            cache_mode=CacheMode.BYPASS,
+                            wait_until="domcontentloaded",
+                            page_timeout=120000,
+                            wait_for_timeout=60000,
+                            simulate_user=True,
+                            delay_before_return_html=3,
+                            word_count_threshold=1,
+                            remove_consent_popups=True,
+                            remove_overlay_elements=True,
+                        )
+                        result = await crawler.arun(url=current_url, config=retry_config)
+
+                    if not result.success:
+                        logger.warning(f"Page crawl failed ({current_url}): {result.status_code}")
+                        crawled.add(current_url)
+                        continue
+
+                    if self._is_block_page(result):
+                        logger.warning(f"Blocked by anti-bot/captcha on page: {current_url}")
+                        if self.headless and self.fallback_visible_on_block:
+                            logger.warning("Retrying blocked page in visible browser mode.")
+                            fallback_result = await self._retry_visible_mode(current_url, run_config)
+                            if fallback_result and fallback_result.success and not self._is_block_page(fallback_result):
+                                result = fallback_result
+                            else:
+                                logger.warning("Visible-mode retry still blocked or failed.")
+                                crawled.add(current_url)
+                                continue
+                        else:
+                            if self.headless:
+                                logger.warning("Try running with --no-headless or --fallback-visible-on-block.")
+                            crawled.add(current_url)
+                            continue
+
+                    logger.info(f"Successfully crawled page. Status: {result.status_code}")
+
+                    # Parse listings from markdown/HTML content
+                    self._parse_listings(result)
+                    crawled.add(current_url)
+
+                    # Discover additional pagination URLs and enqueue unseen pages.
+                    page_urls = self._extract_pagination_urls(result.html, result.url)
+                    for page_url in page_urls:
+                        if page_url not in crawled and page_url not in queue:
+                            queue.append(page_url)
+
+                if not self.listings:
+                    logger.error("No pages were successfully scraped.")
                     return False
-                
-                logger.info(f"Successfully crawled page. Status: {result.status_code}")
-                
-                # Parse listings from markdown/HTML content
-                self._parse_listings(result)
+
+                logger.info(f"Pagination crawl completed. Pages scraped: {len(self.listings)}")
                 
                 return True
                 
         except Exception as e:
             logger.error(f"Error during crawl: {e}", exc_info=True)
             return False
+
+    def _is_block_page(self, result: Any) -> bool:
+        """Return True when crawl result appears to be a captcha/anti-bot page."""
+        title = (result.metadata.get("title") or "").lower()
+        indicators = ["shieldsquare captcha", "captcha"]
+        return any(ind in title for ind in indicators)
+
+    async def _retry_visible_mode(self, url: str, run_config: CrawlerRunConfig) -> Any:
+        """Retry a blocked URL using a visible browser instance."""
+        browser_config = BrowserConfig(
+            headless=False,
+            verbose=True,
+        )
+        try:
+            async with AsyncWebCrawler(config=browser_config) as crawler:
+                return await crawler.arun(url=url, config=run_config)
+        except Exception as exc:
+            logger.warning(f"Visible-mode retry failed: {exc}")
+            return None
+
+    def _normalize_url(self, raw_url: str) -> str:
+        """Normalize URL by preserving query parameters via standard encoding."""
+        parsed = urlparse(raw_url)
+        query_items = parse_qsl(parsed.query, keep_blank_values=True)
+        normalized_query = urlencode(query_items, doseq=True)
+        return urlunparse((parsed.scheme, parsed.netloc, parsed.path, parsed.params, normalized_query, parsed.fragment))
+
+    def _extract_pagination_urls(self, html: str, current_url: str) -> List[str]:
+        """Extract pagination URLs from a result page.
+
+        Returns URLs on the same path with numeric page query params.
+        """
+        if not html:
+            return []
+
+        soup = BeautifulSoup(html, "lxml")
+        parsed_current = urlparse(current_url)
+        current_path = parsed_current.path
+        current_q = dict(parse_qsl(parsed_current.query, keep_blank_values=True))
+
+        pages = set()
+        current_page = int(current_q.get("page", "1")) if current_q.get("page", "1").isdigit() else 1
+        pages.add(current_page)
+
+        for link in soup.find_all("a", href=True):
+            absolute = urljoin(current_url, link["href"].strip())
+            parsed = urlparse(absolute)
+
+            if parsed.path != current_path:
+                continue
+
+            q = dict(parse_qsl(parsed.query, keep_blank_values=True))
+            page_value = q.get("page")
+            if not page_value or not page_value.isdigit():
+                continue
+
+            pages.add(int(page_value))
+
+        # Njuskalo embeds total page count in a JSON blob, use it when present.
+        total_pages_match = re.search(r'"totalPageCount"\s*:\s*(\d+)', html)
+        if total_pages_match:
+            total_pages = int(total_pages_match.group(1))
+            if total_pages > 1:
+                pages.update(range(1, total_pages + 1))
+
+        if len(pages) <= 1:
+            return []
+
+        discovered: List[str] = []
+        for page_num in sorted(pages):
+            q = dict(current_q)
+            if page_num == 1:
+                q.pop("page", None)
+            else:
+                q["page"] = str(page_num)
+
+            query = urlencode(q)
+            page_url = urlunparse((parsed_current.scheme, parsed_current.netloc, current_path, "", query, ""))
+            if page_url != current_url:
+                discovered.append(page_url)
+
+        return discovered
     
     def _parse_listings(self, result: Any) -> None:
         """Extract listing data from crawl result.
@@ -153,6 +304,7 @@ class NjuskaloAutoScraper:
             "sample_listing_titles_count": len(extracted_titles),
             "extracted_listings_count": len(listing_items),
             "extracted_listings_sample": listing_items[:30],
+            "extracted_listings": listing_items,
         }
         
         # If we have extracted markdown, try to identify individual listings
@@ -279,15 +431,26 @@ class NjuskaloAutoScraper:
             Path to the output file
         """
         output_path = Path(self.output_file)
+
+        all_listings: List[Dict[str, Any]] = []
+        seen_urls = set()
+        for page in self.listings:
+            for item in page.get("extracted_listings", []):
+                url = item.get("url")
+                if not url or url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                all_listings.append(item)
         
         # Create output structure
         output_data = {
             "scrape_metadata": {
                 "timestamp": datetime.now().isoformat(),
                 "total_pages_scraped": len(self.listings),
-                "listings_count": len(self.listings),
+                "listings_count": len(all_listings),
             },
-            "listings": self.listings
+            "pages": self.listings,
+            "listings": all_listings,
         }
         
         try:
@@ -310,18 +473,28 @@ class NjuskaloAutoScraper:
             raise
 
 
-async def main(url: str = None):
+async def main(
+    url: str = None,
+    headless: bool = False,
+    fallback_visible_on_block: bool = False,
+):
     """Main entry point for the scraper.
     
     Args:
         url: URL to scrape. Defaults to njuskalo.hr auto listings if not provided.
+        headless: Whether to run browser in headless mode.
+        fallback_visible_on_block: Retry blocked pages in visible browser mode.
     """
     # URL for njuskalo.hr auto listings (default)
     if url is None:
         url = "https://www.njuskalo.hr/auti"
     
     # Initialize scraper
-    scraper = NjuskaloAutoScraper(output_file="njuskalo_auto_listings.json")
+    scraper = NjuskaloAutoScraper(
+        output_file="njuskalo_auto_listings.json",
+        headless=headless,
+        fallback_visible_on_block=fallback_visible_on_block,
+    )
     
     # Run the scrape
     logger.info("=" * 60)

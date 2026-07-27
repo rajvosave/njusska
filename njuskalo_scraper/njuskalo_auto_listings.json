@@ -1,241 +1,413 @@
 {
   "scrape_metadata": {
-    "timestamp": "2026-07-27T22:17:49.492920",
+    "timestamp": "2026-07-27T22:43:22.063067",
     "total_pages_scraped": 1,
-    "listings_count": 1
+    "listings_count": 18
   },
-  "listings": [
+  "pages": [
     {
       "metadata": {
-        "url": "https://www.njuskalo.hr/auti/nissan-qashqai",
-        "title": "Nissan Qashqai vozila - Nissan Qashqai oglasi - Njuškalo",
-        "description": "Nissan Qashqai vozila: prodaja Nissan Qashqai auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Nissan Qashqai automobila",
-        "scraped_at": "2026-07-27T22:17:49.395974",
+        "url": "https://www.njuskalo.hr/auti/cadillac",
+        "title": "Cadillac vozila, Cadillac oglasi - oglasnik Njuškalo",
+        "description": "Cadillac vozila: prodaja Cadillac auta iz cijele Hrvatske. Oglasi: slika + cijena + detaljan opis Cadillac automobila.",
+        "scraped_at": "2026-07-27T22:43:21.959290",
         "success": true,
         "status_code": 200
       },
-      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/nissan-qashqai#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Nissan](https://www.njuskalo.hr/auti/nissan)\n  * [**Qashqai**](https://www.njuskalo.hr/auti/nissan-qashqai)\n\n\n#  **Nissan Qashqai**\nNissan Qashqai vozila: prodaja N",
-      "raw_html_length": 353850,
-      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js BannerHelper--sticky\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Nissan Qashqai vozila - Nissan Qashqai oglasi - Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Cs2_0Q6vC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/28jjxBGe2.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BFDo_7ljB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel",
+      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/cadillac#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [**Cadillac**](https://www.njuskalo.hr/auti/cadillac)\n\n\n#  **Cadillac**\nProdaja vozila Cadillac u oglasima sa slikom i cijenom Cadillac automobila.\n  * [Cadillac CT5](http",
+      "raw_html_length": 276720,
+      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Cadillac vozila, Cadillac oglasi - oglasnik Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BFDo_7ljB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CITPUagGC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/B4o5d-QvB.css\">\n<link rel=\"stylesheet\" href=\"https",
       "sample_listing_titles": [],
       "sample_listing_titles_count": 0,
-      "extracted_listings_count": 30,
+      "extracted_listings_count": 18,
       "extracted_listings_sample": [
         {
-          "title": "Nissan Qashqai 1,5 dCi",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-oglas-50655305",
-          "price": "14.999 €",
-          "location": "Varaždin, Jalkovečka",
-          "year": 2018
+          "title": "Cadillac Escalade 600 automatik",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-600-automatik-oglas-50183672",
+          "price": "109.000 €",
+          "location": "Osijek, Vatrogasno naselje Objavljen: 26.07.2026.",
+          "year": 2022
         },
         {
-          "title": "Nissan Qashqai 1,3 DIG-T MHEV Tekna X-Tronic",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-mhev-tekna-x-tronic-oglas-50258861",
-          "price": "24.450 €",
+          "title": "Cadillac Escalade 6,2 4x4 AWD automatik",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-6.2-4x4-awd-automatik-oglas-51050142",
+          "price": "29.500 €",
+          "location": "Samobor, Centar",
+          "year": 2008
+        },
+        {
+          "title": "Cadillac Lyriq Sport 600E AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50404343",
+          "price": "39.900 €",
+          "location": "Požega, Grgin dol",
+          "year": 2025
+        },
+        {
+          "title": "Cadillac Lyriq Sport 600E AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50403429",
+          "price": "39.900 €",
+          "location": "Požega, Grgin dol",
+          "year": 2025
+        },
+        {
+          "title": "Cadillac Lyriq Sport 600E AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50632879",
+          "price": "44.900 €",
+          "location": "Požega, Grgin dol",
+          "year": 2025
+        },
+        {
+          "title": "Cadillac Lyriq Sport 600E AWD !NOVO!",
+          "url": "https://www.njuskalo.hr/novi-auti/cadillac-lyriq-sport-600e-awd-oglas-50766868",
+          "price": "63.750 €",
+          "location": "Požega, Grgin dol Objavljen: 16.07.2026.",
+          "year": null
+        },
+        {
+          "title": "Cadillac Lyriq Sport 600E AWD !NOVO!",
+          "url": "https://www.njuskalo.hr/novi-auti/cadillac-lyriq-sport-600e-awd-oglas-50746891",
+          "price": "63.750 €",
+          "location": "Požega, Grgin dol Objavljen: 16.07.2026.",
+          "year": null
+        },
+        {
+          "title": "Cadillac Seville sts automatik",
+          "url": "https://www.njuskalo.hr/auti/cadillac-seville-sts-automatik-oglas-42007682",
+          "price": "12.900 €",
+          "location": "Ludbreg, Ludbreg",
+          "year": 1999
+        },
+        {
+          "title": "Cadillac CT5 V Series Blackwing",
+          "url": "https://www.njuskalo.hr/auti/cadillac-ct5-v-series-blackwing-oglas-50673470",
+          "price": "249.562 €",
+          "location": "Njemačka Objavljen: 25.05.2026.",
+          "year": 2025
+        },
+        {
+          "title": "Cadillac Escalade IQ",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-iq-oglas-50650035",
+          "price": "178.125 €",
+          "location": "Ostalo Izvan EU Objavljen: 21.05.2026.",
+          "year": 2026
+        },
+        {
+          "title": "Cadillac Escalade ESV Sport Platinum",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-esv-sport-platinum-automatik-oglas-48584624",
+          "price": "245.273 €",
+          "location": "Ostalo Izvan EU Objavljen: 16.05.2026.",
+          "year": 2025
+        },
+        {
+          "title": "Cadillac Lyriq Sport 600e AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-automatik-oglas-50615377",
+          "price": "70.452 €",
+          "location": "Ostalo Izvan EU Objavljen: 16.05.2026.",
+          "year": 2026
+        },
+        {
+          "title": "Alu felge 18'' rupe 5x112, 4 kom.",
+          "url": "https://www.njuskalo.hr/alu-felge/alu-felge-18-rupe-5x112-4-kom-oglas-51074719",
+          "price": "",
           "location": "",
+          "year": null
+        },
+        {
+          "title": "IPHONE 17 PRO MAX 256GB - NOVO - RAČUN!",
+          "url": "https://www.njuskalo.hr/iphone-17-pro-max/iphone-17-pro-max-256gb-racun-oglas-51074718",
+          "price": "",
+          "location": "",
+          "year": null
+        },
+        {
+          "title": "Alfa Romeo 33 maska",
+          "url": "https://www.njuskalo.hr/oldtimer-dijelovi/alfa-romeo-33-maska-oglas-51074717",
+          "price": "",
+          "location": "",
+          "year": null
+        },
+        {
+          "title": "Honda čelične felge 16 cola 5x114.3 6.5J ET55 , set 100eura",
+          "url": "https://www.njuskalo.hr/felge-naplatci/honda-celicne-felge-16-cola-5x114.3-6.5j-et55-set-100eura-oglas-51074716",
+          "price": "",
+          "location": "",
+          "year": null
+        },
+        {
+          "title": "STARA PEGLA NA ŽAR - BIDERAMAYER",
+          "url": "https://www.njuskalo.hr/stare-stvari/stara-pegla-zar-bideramayer-oglas-51074715",
+          "price": "",
+          "location": "",
+          "year": null
+        },
+        {
+          "title": "Siemens iQ300 perilica posuđa 45 cm ,inox, Home Connect,odlično stanje",
+          "url": "https://www.njuskalo.hr/perilice-posuda/siemens-iq300-perilica-posuda-45-cm-inox-home-connect-odlicno-stanje-oglas-51074714",
+          "price": "",
+          "location": "",
+          "year": null
+        }
+      ],
+      "extracted_listings": [
+        {
+          "title": "Cadillac Escalade 600 automatik",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-600-automatik-oglas-50183672",
+          "price": "109.000 €",
+          "location": "Osijek, Vatrogasno naselje Objavljen: 26.07.2026.",
           "year": 2022
         },
         {
-          "title": "Nissan Qashqai 1,7 DCI 150ks SERV.,NAVI.,LED.,XENON,PANO.,KAM.360",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.7-dci-150ks-serv-navi-led-xenon-pano-kam-360-oglas-46832850",
-          "price": "15.600 €",
-          "location": "Krapina, Centar",
-          "year": 2019
+          "title": "Cadillac Escalade 6,2 4x4 AWD automatik",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-6.2-4x4-awd-automatik-oglas-51050142",
+          "price": "29.500 €",
+          "location": "Samobor, Centar",
+          "year": 2008
         },
         {
-          "title": "Nissan Qashqai 1.3 HIBRID 57 TKM SERVISNA LED  NAVI KAMERA 360  XENON",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-41-tkm-servisna-led-svjetla-top-stanj-2022-gode-oglas-44560286",
-          "price": "22.999 €",
-          "location": "Osijek, Retfala",
-          "year": 2023
+          "title": "Cadillac Lyriq Sport 600E AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50404343",
+          "price": "39.900 €",
+          "location": "Požega, Grgin dol",
+          "year": 2025
         },
         {
-          "title": "Nissan Qashqai 1.5 automatik",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-automatik-oglas-49494814",
-          "price": "26.500 €",
-          "location": "Stenjevec, Špansko",
-          "year": 2023
+          "title": "Cadillac Lyriq Sport 600E AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50403429",
+          "price": "39.900 €",
+          "location": "Požega, Grgin dol",
+          "year": 2025
         },
         {
-          "title": "Nissan Qashqai 1,3 DIG-T CONECTA 140 ks",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-conecta-140-ks-oglas-50814079",
-          "price": "18.900 €",
-          "location": "Sveti Ivan Zelina, Brezovec Zelinski",
-          "year": 2021
+          "title": "Cadillac Lyriq Sport 600E AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50632879",
+          "price": "44.900 €",
+          "location": "Požega, Grgin dol",
+          "year": 2025
         },
         {
-          "title": "Nissan Qashqai 1,5 dCi KARTICE-GARANCIJA AKCIJA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-kartice-garancija-oglas-50917791",
-          "price": "8.799 €",
-          "location": "Sisak - Okolica, Stara Drenčina",
-          "year": 2014
+          "title": "Cadillac Lyriq Sport 600E AWD !NOVO!",
+          "url": "https://www.njuskalo.hr/novi-auti/cadillac-lyriq-sport-600e-awd-oglas-50766868",
+          "price": "63.750 €",
+          "location": "Požega, Grgin dol Objavljen: 16.07.2026.",
+          "year": null
         },
         {
-          "title": "Nissan Qashqai 1.6 Dci*REDIZAJN*N-CONNECTA*NAVI*KAMERA 360%*PANORAMA*",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-redizajn-n-connecta-navi-kamera-360-panorama-oglas-50481263",
-          "price": "14.999 €",
-          "location": "Sesvete, Sopnica",
-          "year": 2017
+          "title": "Cadillac Lyriq Sport 600E AWD !NOVO!",
+          "url": "https://www.njuskalo.hr/novi-auti/cadillac-lyriq-sport-600e-awd-oglas-50746891",
+          "price": "63.750 €",
+          "location": "Požega, Grgin dol Objavljen: 16.07.2026.",
+          "year": null
         },
         {
-          "title": "Nissan Qashqai 1,5 dCi  N-Connecta",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-n-connecta-oglas-51039602",
-          "price": "16.999 €",
-          "location": "Osijek, Zeleno polje",
-          "year": 2019
+          "title": "Cadillac Seville sts automatik",
+          "url": "https://www.njuskalo.hr/auti/cadillac-seville-sts-automatik-oglas-42007682",
+          "price": "12.900 €",
+          "location": "Ludbreg, Ludbreg",
+          "year": 1999
         },
         {
-          "title": "Nissan Qashqai 1,5 dCi N-Connecta",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-n-connecta-oglas-51016695",
-          "price": "15.499 €",
-          "location": "Osijek, Zeleno polje",
-          "year": 2019
+          "title": "Cadillac CT5 V Series Blackwing",
+          "url": "https://www.njuskalo.hr/auti/cadillac-ct5-v-series-blackwing-oglas-50673470",
+          "price": "249.562 €",
+          "location": "Njemačka Objavljen: 25.05.2026.",
+          "year": 2025
         },
         {
-          "title": "Nissan Qashqai 1.3-N CONNECTA-DVOBOJAN-KAMERA 360-VELIKA MEDIA-LED",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-n-connecta-dvobojan-kamera-360-velika-media-led-oglas-51003829",
-          "price": "22.999 €",
-          "location": "Osijek - Okolica, Josipovac",
-          "year": 2022
+          "title": "Cadillac Escalade IQ",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-iq-oglas-50650035",
+          "price": "178.125 €",
+          "location": "Ostalo Izvan EU Objavljen: 21.05.2026.",
+          "year": 2026
         },
         {
-          "title": "Nissan Qashqai 1,3 DIG-T automatik Tekna+ LED-ALU-KAMERA 360-PANORAMA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-automatik-tekna-led-alu-kamera-360-panorama-oglas-50666313",
-          "price": "23.900 €",
-          "location": "Osijek - Okolica, Josipovac",
-          "year": 2021
+          "title": "Cadillac Escalade ESV Sport Platinum",
+          "url": "https://www.njuskalo.hr/auti/cadillac-escalade-esv-sport-platinum-automatik-oglas-48584624",
+          "price": "245.273 €",
+          "location": "Ostalo Izvan EU Objavljen: 16.05.2026.",
+          "year": 2025
         },
         {
-          "title": "Nissan Qashqai 1,5 dCi, N-TEC, panorama, parkirna kamera",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-oglas-50848524",
-          "price": "5.750 €",
-          "location": "Hrvatska Dubica, Hrvatska Dubica",
-          "year": 2010
+          "title": "Cadillac Lyriq Sport 600e AWD",
+          "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-automatik-oglas-50615377",
+          "price": "70.452 €",
+          "location": "Ostalo Izvan EU Objavljen: 16.05.2026.",
+          "year": 2026
         },
         {
-          "title": "Nissan Qashqai 1,2 DIG-T automatik(PANORAMA/ALKANTARA/PARKING KAMERA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-dig-t-automatik-oglas-51074100",
-          "price": "12.990 €",
-          "location": "Rijeka, Srdoči",
-          "year": 2017
+          "title": "Alu felge 18'' rupe 5x112, 4 kom.",
+          "url": "https://www.njuskalo.hr/alu-felge/alu-felge-18-rupe-5x112-4-kom-oglas-51074719",
+          "price": "",
+          "location": "",
+          "year": null
         },
         {
-          "title": "Nissan Qashqai 1,5dCi TEKNA+  AUTOMAT,ACC,PANORAMA,MEMORIJA,360°KAMERA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5dci-tekna-automat-acc-panorama-memorija-360-kamera-oglas-51073914",
-          "price": "17.999 €",
-          "location": "Osijek, Industrijska zona (Čepinska)",
-          "year": 2020
+          "title": "IPHONE 17 PRO MAX 256GB - NOVO - RAČUN!",
+          "url": "https://www.njuskalo.hr/iphone-17-pro-max/iphone-17-pro-max-256gb-racun-oglas-51074718",
+          "price": "",
+          "location": "",
+          "year": null
         },
         {
-          "title": "NISSAN QASHQAI 1,5 DCI • REG.12/2026. • FULL OPREMA TEKNA • ODLIČAN",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-reg-12-2026-full-tekna-top-stanje-oglas-50758575",
-          "price": "10.700 €",
-          "location": "Split, Šine",
-          "year": 2014
+          "title": "Alfa Romeo 33 maska",
+          "url": "https://www.njuskalo.hr/oldtimer-dijelovi/alfa-romeo-33-maska-oglas-51074717",
+          "price": "",
+          "location": "",
+          "year": null
         },
         {
-          "title": "Nissan Qashqai 1,2 Tekna 360°",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-tekna-360-oglas-50989207",
-          "price": "11.490 €",
-          "location": "Velika Gorica - Okolica, Velika Mlaka",
-          "year": 2015
+          "title": "Honda čelične felge 16 cola 5x114.3 6.5J ET55 , set 100eura",
+          "url": "https://www.njuskalo.hr/felge-naplatci/honda-celicne-felge-16-cola-5x114.3-6.5j-et55-set-100eura-oglas-51074716",
+          "price": "",
+          "location": "",
+          "year": null
         },
         {
-          "title": "Nissan Qashqai 1,2 Tekna 360°",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-tekna-360-oglas-50910253",
-          "price": "11.190 €",
-          "location": "Velika Gorica - Okolica, Velika Mlaka",
-          "year": 2015
+          "title": "STARA PEGLA NA ŽAR - BIDERAMAYER",
+          "url": "https://www.njuskalo.hr/stare-stvari/stara-pegla-zar-bideramayer-oglas-51074715",
+          "price": "",
+          "location": "",
+          "year": null
         },
         {
-          "title": "Nissan Qashqai 1,2 DIG-T facelift N-Connecta",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.2-dig-t-facelift-n-connecta-oglas-50743274",
-          "price": "12.990 €",
-          "location": "Velika Gorica - Okolica, Velika Mlaka",
-          "year": 2018
-        },
-        {
-          "title": "Nissan Qashqai 1.6 DCI  146tkm  Reg 1 god.  Super stanje  (zamjena)",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-145tkm-navi-kamera-tempomat-pdc-grij-sjedala-oglas-50192960",
-          "price": "10.999 €",
-          "location": "Slavonski Brod, Centar",
-          "year": 2014
-        },
-        {
-          "title": "Nissan Qashqai 1,6 dCi Servisna,1 vlasnik Navi,Kamera,Dva seta kotača",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-navi-kamera-grijanje-sjedala-servisna-oglas-50492494",
-          "price": "10.900 €",
-          "location": "Velika Gorica, Kokotovo naselje",
-          "year": 2014
-        },
-        {
-          "title": "Nissan Qashqai 1,6 dCi / 4x4 / NAVI / XENON / ALU / PDC / REG 3-2027",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.6-dci-4x4-navi-xenon-alu-pdc-reg-3-2027-oglas-50996905",
-          "price": "10.750 €",
-          "location": "Sesvete, Kraljevečki Novaki",
-          "year": 2014
-        },
-        {
-          "title": "Nissan Qashqai 1,3 DIG-T",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-oglas-50948843",
-          "price": "20.000 €",
-          "location": "Čakovec, Jug",
-          "year": 2019
-        },
-        {
-          "title": "Nissan Qashqai 1.3 /158 ks AUTOMATIK - PRVI VLASNIK - SERVISNA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-158-ks-automatik-prvi-vlasnik-oglas-51058265",
-          "price": "17.650 €",
-          "location": "Koprivnica, Centar",
-          "year": 2022
-        },
-        {
-          "title": "Nissan Qashqai 1,7dci, 150ks, N-Connecta, EKSTRA STANJE",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.7dci-150ks-n-connecta-ekstra-stanje-oglas-50933132",
-          "price": "17.000 €",
-          "location": "Trnje, Trnje",
-          "year": 2019
-        },
-        {
-          "title": "Nissan Qashqai 1,5 dCi TEKNA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-tekna-oglas-51006730",
-          "price": "15.599 €",
-          "location": "Samobor, Južno naselje",
-          "year": 2018
-        },
-        {
-          "title": "Nissan Qashqai 1,5 dCi N-Connecta,Led,Panorama,Navi,Servis,Garancija",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-n-connecta-led-panorama-navi-servis-garancija-oglas-49265473",
-          "price": "17.900 €",
-          "location": "Kastav, Rubeši",
-          "year": 2019
-        },
-        {
-          "title": "Nissan Qashqai 1.3 DIG-T N-Connecta,1vlasnik,LEASING BEZ UČEŠĆA",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.3-dig-t-n-connecta-1vlasnik-leasing-bez-ucesca-oglas-50820920",
-          "price": "24.900 €",
-          "location": "Kastav, Rubeši",
-          "year": 2024
-        },
-        {
-          "title": "Nissan Qashqai 1,5 dCi,Veliki servis",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-reg-08-2025-oglas-47002801",
-          "price": "7.900 €",
-          "location": "Kastav, Rubeši",
-          "year": 2013
-        },
-        {
-          "title": "Nissan Qashqai 1,5 dCi panorama | led | navigacija",
-          "url": "https://www.njuskalo.hr/auti/nissan-qashqai-1.5-dci-oglas-50255901",
-          "price": "17.900 €",
-          "location": "Sesvete, Sesvete",
-          "year": 2019
+          "title": "Siemens iQ300 perilica posuđa 45 cm ,inox, Home Connect,odlično stanje",
+          "url": "https://www.njuskalo.hr/perilice-posuda/siemens-iq300-perilica-posuda-45-cm-inox-home-connect-odlicno-stanje-oglas-51074714",
+          "price": "",
+          "location": "",
+          "year": null
         }
       ],
       "extracted_content": {
-        "lines_count": 517,
-        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/nissan-qashqai#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Nissan](https://www.njuskalo.hr/auti/nissan)\n  * [**Qashqai**](https://www.njuskalo.hr/auti/nissan-qashqai)\n\n\n#  **Nissan Qashqai**\nNissan Qashqai vozila: prodaja Nissan Qashqai auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Nissan Qashqai automobila.\nPozicioniranje na listi može biti određeno različitim parametrima. [Saznaj više](https://www.njuskalo.hr/help/kontakt-i-pomoc/njuskalo-osnove/pozicioniranje-oglasa-cid375)\n  * [**1**](https://www.njuskalo.hr/auti/nissan-qashqai)\n  * [2](https://www.njuskalo.hr/auti/nissan-qashqai?page=2)\n  * [3](https://www.njuskalo.hr/auti/nissan-qashqai?page=3)\n  * [4](https://www.njuskalo.hr/auti/nissan-qashqai?page=4)\n  * [5](https://www.njuskalo.hr/auti/nissan-qashqai?page=5)\n  * [6](https://www.njuskalo.hr/auti/nissan-qashqai?page=6)"
+        "lines_count": 307,
+        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/cadillac#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [**Cadillac**](https://www.njuskalo.hr/auti/cadillac)\n\n\n#  **Cadillac**\nProdaja vozila Cadillac u oglasima sa slikom i cijenom Cadillac automobila.\n  * [Cadillac CT5](https://www.njuskalo.hr/auti/cadillac-ct5) 1\n  * [Cadillac Escalade](https://www.njuskalo.hr/auti/cadillac-escalade) 4\n\n\n  * [Cadillac Lyriq](https://www.njuskalo.hr/auti/cadillac-lyriq) 6\n\n\n  * [Cadillac Seville](https://www.njuskalo.hr/auti/cadillac-seville) 1"
       }
+    }
+  ],
+  "listings": [
+    {
+      "title": "Cadillac Escalade 600 automatik",
+      "url": "https://www.njuskalo.hr/auti/cadillac-escalade-600-automatik-oglas-50183672",
+      "price": "109.000 €",
+      "location": "Osijek, Vatrogasno naselje Objavljen: 26.07.2026.",
+      "year": 2022
+    },
+    {
+      "title": "Cadillac Escalade 6,2 4x4 AWD automatik",
+      "url": "https://www.njuskalo.hr/auti/cadillac-escalade-6.2-4x4-awd-automatik-oglas-51050142",
+      "price": "29.500 €",
+      "location": "Samobor, Centar",
+      "year": 2008
+    },
+    {
+      "title": "Cadillac Lyriq Sport 600E AWD",
+      "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50404343",
+      "price": "39.900 €",
+      "location": "Požega, Grgin dol",
+      "year": 2025
+    },
+    {
+      "title": "Cadillac Lyriq Sport 600E AWD",
+      "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50403429",
+      "price": "39.900 €",
+      "location": "Požega, Grgin dol",
+      "year": 2025
+    },
+    {
+      "title": "Cadillac Lyriq Sport 600E AWD",
+      "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-oglas-50632879",
+      "price": "44.900 €",
+      "location": "Požega, Grgin dol",
+      "year": 2025
+    },
+    {
+      "title": "Cadillac Lyriq Sport 600E AWD !NOVO!",
+      "url": "https://www.njuskalo.hr/novi-auti/cadillac-lyriq-sport-600e-awd-oglas-50766868",
+      "price": "63.750 €",
+      "location": "Požega, Grgin dol Objavljen: 16.07.2026.",
+      "year": null
+    },
+    {
+      "title": "Cadillac Lyriq Sport 600E AWD !NOVO!",
+      "url": "https://www.njuskalo.hr/novi-auti/cadillac-lyriq-sport-600e-awd-oglas-50746891",
+      "price": "63.750 €",
+      "location": "Požega, Grgin dol Objavljen: 16.07.2026.",
+      "year": null
+    },
+    {
+      "title": "Cadillac Seville sts automatik",
+      "url": "https://www.njuskalo.hr/auti/cadillac-seville-sts-automatik-oglas-42007682",
+      "price": "12.900 €",
+      "location": "Ludbreg, Ludbreg",
+      "year": 1999
+    },
+    {
+      "title": "Cadillac CT5 V Series Blackwing",
+      "url": "https://www.njuskalo.hr/auti/cadillac-ct5-v-series-blackwing-oglas-50673470",
+      "price": "249.562 €",
+      "location": "Njemačka Objavljen: 25.05.2026.",
+      "year": 2025
+    },
+    {
+      "title": "Cadillac Escalade IQ",
+      "url": "https://www.njuskalo.hr/auti/cadillac-escalade-iq-oglas-50650035",
+      "price": "178.125 €",
+      "location": "Ostalo Izvan EU Objavljen: 21.05.2026.",
+      "year": 2026
+    },
+    {
+      "title": "Cadillac Escalade ESV Sport Platinum",
+      "url": "https://www.njuskalo.hr/auti/cadillac-escalade-esv-sport-platinum-automatik-oglas-48584624",
+      "price": "245.273 €",
+      "location": "Ostalo Izvan EU Objavljen: 16.05.2026.",
+      "year": 2025
+    },
+    {
+      "title": "Cadillac Lyriq Sport 600e AWD",
+      "url": "https://www.njuskalo.hr/auti/cadillac-lyriq-sport-600e-awd-automatik-oglas-50615377",
+      "price": "70.452 €",
+      "location": "Ostalo Izvan EU Objavljen: 16.05.2026.",
+      "year": 2026
+    },
+    {
+      "title": "Alu felge 18'' rupe 5x112, 4 kom.",
+      "url": "https://www.njuskalo.hr/alu-felge/alu-felge-18-rupe-5x112-4-kom-oglas-51074719",
+      "price": "",
+      "location": "",
+      "year": null
+    },
+    {
+      "title": "IPHONE 17 PRO MAX 256GB - NOVO - RAČUN!",
+      "url": "https://www.njuskalo.hr/iphone-17-pro-max/iphone-17-pro-max-256gb-racun-oglas-51074718",
+      "price": "",
+      "location": "",
+      "year": null
+    },
+    {
+      "title": "Alfa Romeo 33 maska",
+      "url": "https://www.njuskalo.hr/oldtimer-dijelovi/alfa-romeo-33-maska-oglas-51074717",
+      "price": "",
+      "location": "",
+      "year": null
+    },
+    {
+      "title": "Honda čelične felge 16 cola 5x114.3 6.5J ET55 , set 100eura",
+      "url": "https://www.njuskalo.hr/felge-naplatci/honda-celicne-felge-16-cola-5x114.3-6.5j-et55-set-100eura-oglas-51074716",
+      "price": "",
+      "location": "",
+      "year": null
+    },
+    {
+      "title": "STARA PEGLA NA ŽAR - BIDERAMAYER",
+      "url": "https://www.njuskalo.hr/stare-stvari/stara-pegla-zar-bideramayer-oglas-51074715",
+      "price": "",
+      "location": "",
+      "year": null
+    },
+    {
+      "title": "Siemens iQ300 perilica posuđa 45 cm ,inox, Home Connect,odlično stanje",
+      "url": "https://www.njuskalo.hr/perilice-posuda/siemens-iq300-perilica-posuda-45-cm-inox-home-connect-odlicno-stanje-oglas-51074714",
+      "price": "",
+      "location": "",
+      "year": null
     }
   ]
 }
