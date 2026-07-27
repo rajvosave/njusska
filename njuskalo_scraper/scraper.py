@@ -18,6 +18,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def _path_parts(path: str) -> List[str]:
+    """Return non-empty URL path segments."""
+    return [part for part in path.split("/") if part]
+
+
 class NjuskaloAutoScraper:
     """Scraper for njuskalo.hr auto-oglasi (vehicle listings)."""
     
@@ -346,14 +351,22 @@ class NjuskaloAutoScraper:
         soup = BeautifulSoup(html, "lxml")
         items: List[Dict[str, Any]] = []
         seen_urls = set()
+        scope = self._build_listing_scope(base_url)
 
-        for link in soup.find_all("a", href=True):
+        listing_cards = self._find_listing_cards(soup)
+        for card in listing_cards:
+            link = card.find("a", href=True)
+            if link is None:
+                continue
+
             href = link.get("href", "").strip()
             if "-oglas-" not in href:
                 continue
 
             full_url = urljoin(base_url, href)
             if full_url in seen_urls:
+                continue
+            if not self._is_relevant_listing_url(full_url, scope):
                 continue
 
             title = link.get_text(" ", strip=True)
@@ -362,21 +375,7 @@ class NjuskaloAutoScraper:
             if not title:
                 continue
 
-            # Find the listing card/container to extract structured fields.
-            container = None
-            node = link
-            for _ in range(8):
-                node = node.parent
-                if node is None:
-                    break
-                if node.name == "article":
-                    container = node
-                    break
-
-            if container is None:
-                container = link.parent
-
-            card_text = " ".join(container.get_text(" ", strip=True).split()) if container else ""
+            card_text = " ".join(card.get_text(" ", strip=True).split())
             year, location, price = self._extract_listing_details_from_text(card_text)
 
             seen_urls.add(full_url)
@@ -389,6 +388,53 @@ class NjuskaloAutoScraper:
             })
 
         return items
+
+    def _find_listing_cards(self, soup: BeautifulSoup) -> List[Any]:
+        """Return article nodes from the main search result list only."""
+        sections = soup.select("section.EntityList--ListItemRegularAd")
+        cards: List[Any] = []
+        for section in sections:
+            cards.extend(section.select("li.EntityList-item article"))
+
+        if cards:
+            return cards
+
+        return list(soup.find_all("article"))
+
+    def _build_listing_scope(self, base_url: str) -> Dict[str, str]:
+        """Build category/model scope from the requested page URL."""
+        parsed = urlparse(base_url)
+        parts = _path_parts(parsed.path)
+        category = parts[0] if parts else ""
+        slug = parts[-1] if parts else ""
+        canonical_category = "auti" if category == "rabljeni-auti" else category
+        return {
+            "netloc": parsed.netloc.lower(),
+            "category": canonical_category,
+            "requested_category": category,
+            "slug": slug,
+        }
+
+    def _is_relevant_listing_url(self, listing_url: str, scope: Dict[str, str]) -> bool:
+        """Return True if listing URL belongs to the active category/model scope."""
+        parsed = urlparse(listing_url)
+        if scope["netloc"] and parsed.netloc.lower() != scope["netloc"]:
+            return False
+
+        parts = _path_parts(parsed.path)
+        if len(parts) < 2:
+            return False
+
+        category = scope.get("category", "")
+        if category and parts[0] != category:
+            return False
+
+        slug = scope.get("slug", "")
+        requested_category = scope.get("requested_category", "")
+        if slug and requested_category == "auti" and not parts[1].startswith(f"{slug}-"):
+            return False
+
+        return True
 
     def _extract_listing_details_from_text(self, text: str) -> tuple[Any, str, str]:
         """Extract year, location and price from listing card text."""
