@@ -1,0 +1,5 @@
+crawl4ai
+aiohttp>=3.11.11
+playwright
+beautifulsoup4
+lxml

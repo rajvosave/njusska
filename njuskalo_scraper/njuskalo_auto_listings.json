@@ -1,0 +1,25 @@
+{
+  "scrape_metadata": {
+    "timestamp": "2026-07-27T22:08:24.462903",
+    "total_pages_scraped": 1,
+    "listings_count": 1
+  },
+  "listings": [
+    {
+      "metadata": {
+        "url": "https://www.njuskalo.hr/auti/nissan-qashqai",
+        "title": "N/A",
+        "description": "",
+        "scraped_at": "2026-07-27T22:08:24.363663",
+        "success": true,
+        "status_code": 200
+      },
+      "raw_content_preview": "\n",
+      "raw_html_length": 40,
+      "extracted_content": {
+        "lines_count": 2,
+        "content_preview": "\n"
+      }
+    }
+  ]
+}
