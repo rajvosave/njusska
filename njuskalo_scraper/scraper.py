@@ -3,7 +3,7 @@ import json
 import logging
 import re
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, parse_qsl, urlencode, urlunparse
 
@@ -31,6 +31,7 @@ class NjuskaloAutoScraper:
         output_file: str = "listings.json",
         headless: bool = False,
         fallback_visible_on_block: bool = False,
+        max_pages: int = 100,
     ):
         """Initialize the scraper with output file configuration.
         
@@ -38,10 +39,12 @@ class NjuskaloAutoScraper:
             output_file: Path to save JSON output
             headless: Whether to run browser in headless mode
             fallback_visible_on_block: Retry blocked pages in visible browser mode
+            max_pages: Maximum number of pagination pages to scrape
         """
         self.output_file = output_file
         self.headless = headless
         self.fallback_visible_on_block = fallback_visible_on_block
+        self.max_pages = max(1, int(max_pages))
         self.listings: List[Dict[str, Any]] = []
         self.last_full_html: str = ""
         
@@ -115,9 +118,8 @@ class NjuskaloAutoScraper:
             async with AsyncWebCrawler(config=browser_config) as crawler:
                 queue = [start_url]
                 crawled = set()
-                max_pages = 100
 
-                while queue and len(crawled) < max_pages:
+                while queue and len(crawled) < self.max_pages:
                     current_url = queue.pop(0)
                     if current_url in crawled:
                         continue
@@ -469,15 +471,9 @@ class NjuskaloAutoScraper:
             return float(normalized)
         except ValueError:
             return 0.0
-    
-    def save_output(self) -> str:
-        """Save scraped listings to JSON file.
-        
-        Returns:
-            Path to the output file
-        """
-        output_path = Path(self.output_file)
 
+    def get_output_data(self) -> Dict[str, Any]:
+        """Return structured scrape data suitable for API or DB use."""
         all_listings: List[Dict[str, Any]] = []
         seen_urls = set()
         for page in self.listings:
@@ -487,9 +483,8 @@ class NjuskaloAutoScraper:
                     continue
                 seen_urls.add(url)
                 all_listings.append(item)
-        
-        # Create output structure
-        output_data = {
+
+        return {
             "scrape_metadata": {
                 "timestamp": datetime.now().isoformat(),
                 "total_pages_scraped": len(self.listings),
@@ -498,6 +493,15 @@ class NjuskaloAutoScraper:
             "pages": self.listings,
             "listings": all_listings,
         }
+    
+    def save_output(self) -> str:
+        """Save scraped listings to JSON file.
+        
+        Returns:
+            Path to the output file
+        """
+        output_path = Path(self.output_file)
+        output_data = self.get_output_data()
         
         try:
             with open(output_path, 'w', encoding='utf-8') as f:
@@ -519,10 +523,53 @@ class NjuskaloAutoScraper:
             raise
 
 
-async def main(
-    url: str = None,
+async def scrape_to_dict(
+    url: str,
     headless: bool = False,
     fallback_visible_on_block: bool = False,
+    max_pages: int = 100,
+    output_file: str = "njuskalo_auto_listings.json",
+) -> Dict[str, Any]:
+    """Programmatic API: scrape URL and return structured data without file reads.
+
+    Raises RuntimeError when scraping does not succeed.
+    """
+    scraper = NjuskaloAutoScraper(
+        output_file=output_file,
+        headless=headless,
+        fallback_visible_on_block=fallback_visible_on_block,
+        max_pages=max_pages,
+    )
+    success = await scraper.scrape(url)
+    if not success:
+        raise RuntimeError(f"Scrape failed for URL: {url}")
+    return scraper.get_output_data()
+
+
+def scrape_to_dict_sync(
+    url: str,
+    headless: bool = False,
+    fallback_visible_on_block: bool = False,
+    max_pages: int = 100,
+    output_file: str = "njuskalo_auto_listings.json",
+) -> Dict[str, Any]:
+    """Synchronous wrapper for scrape_to_dict."""
+    return asyncio.run(
+        scrape_to_dict(
+            url=url,
+            headless=headless,
+            fallback_visible_on_block=fallback_visible_on_block,
+            max_pages=max_pages,
+            output_file=output_file,
+        )
+    )
+
+
+async def main(
+    url: Optional[str] = None,
+    headless: bool = False,
+    fallback_visible_on_block: bool = False,
+    max_pages: int = 100,
 ):
     """Main entry point for the scraper.
     
@@ -530,6 +577,7 @@ async def main(
         url: URL to scrape. Defaults to njuskalo.hr auto listings if not provided.
         headless: Whether to run browser in headless mode.
         fallback_visible_on_block: Retry blocked pages in visible browser mode.
+        max_pages: Maximum number of pages to scrape.
     """
     # URL for njuskalo.hr auto listings (default)
     if url is None:
@@ -540,6 +588,7 @@ async def main(
         output_file="njuskalo_auto_listings.json",
         headless=headless,
         fallback_visible_on_block=fallback_visible_on_block,
+        max_pages=max_pages,
     )
     
     # Run the scrape

@@ -9,6 +9,7 @@ Usage:
     python main.py                                          # Scrape default URL (auti), visible browser
     python main.py --no-headless                            # Scrape with visible browser
     python main.py --fallback-visible-on-block "URL"       # Headless first, then visible fallback if blocked
+    python main.py --max-pages 3 "URL"                      # Scrape only first 3 pages
     python main.py https://www.njuskalo.hr/auti             # Scrape specific URL
     python main.py https://example.com/listings --headless  # Scrape any URL with explicit headless
 """
@@ -45,6 +46,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="When blocked in headless mode, retry that page once in visible mode",
     )
+    parser.add_argument(
+        "--max-pages",
+        type=int,
+        default=100,
+        help="Maximum number of pages to scrape from pagination (default: 100)",
+    )
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -54,6 +61,7 @@ if __name__ == "__main__":
             args.url,
             headless=args.headless,
             fallback_visible_on_block=args.fallback_visible_on_block,
+            max_pages=args.max_pages,
         )
     )
     raise SystemExit(0 if ok else 1)

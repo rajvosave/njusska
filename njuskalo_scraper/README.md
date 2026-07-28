@@ -13,6 +13,7 @@ Scrapes vehicle listings from Njuskalo using crawl4AI and exports structured JSO
   - `year`
 - Handles consent/overlay popups.
 - Supports headless or visible browser mode.
+- Supports limiting how many pages are scraped.
 - Produces both per-page data and flattened deduplicated listing output.
 
 ## Requirements
@@ -59,6 +60,13 @@ python main.py --headless "https://www.njuskalo.hr/auti/nissan-qashqai"
 
 # Headless first, retry blocked pages in visible mode
 python main.py --headless --fallback-visible-on-block "https://www.njuskalo.hr/auti/nissan-qashqai"
+```
+
+### Limit Page Count
+
+```bash
+# Scrape first 3 pages only
+python main.py --max-pages 3 "https://www.njuskalo.hr/auti/nissan-qashqai"
 ```
 
 ### CLI Help
@@ -108,6 +116,32 @@ Example listing object:
   "year": 2018
 }
 ```
+
+## Programmatic API
+
+You can import and run the scraper from another Python app and get a dict directly.
+
+```python
+from scraper import scrape_to_dict, scrape_to_dict_sync
+
+# Async usage
+data = await scrape_to_dict(
+  url="https://www.njuskalo.hr/auti/nissan-qashqai",
+  max_pages=3,
+  headless=False,
+)
+
+# Sync usage
+data_sync = scrape_to_dict_sync(
+  url="https://www.njuskalo.hr/auti/nissan-qashqai",
+  max_pages=3,
+)
+
+print(data["scrape_metadata"]) 
+print(len(data["listings"]))
+```
+
+This is suitable for storing listings in a database without parsing JSON files.
 
 ## Notes
 
