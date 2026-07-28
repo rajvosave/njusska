@@ -299,7 +299,7 @@ class NjuskaloAutoScraper:
         if result.markdown:
             extracted_titles = self._extract_listing_titles_from_markdown(result.markdown)
 
-        listing_items = self._extract_listing_items_from_html(result.html, result.url)
+        listing_items, listing_debug = self._extract_listing_items_from_html(result.html, result.url)
         self.last_full_html = result.html or ""
 
         listing = {
@@ -312,6 +312,7 @@ class NjuskaloAutoScraper:
             "extracted_listings_count": len(listing_items),
             "extracted_listings_sample": listing_items[:30],
             "extracted_listings": listing_items,
+            "listing_debug": listing_debug,
         }
         
         # If we have extracted markdown, try to identify individual listings
@@ -342,17 +343,26 @@ class NjuskaloAutoScraper:
                 titles.append(title)
         return titles
 
-    def _extract_listing_items_from_html(self, html: str, base_url: str) -> List[Dict[str, Any]]:
+    def _extract_listing_items_from_html(self, html: str, base_url: str) -> tuple[List[Dict[str, Any]], Dict[str, Any]]:
         """Extract listing links from HTML.
 
         This targets njuskalo ad URLs containing -oglas-.
         """
         if not html:
-            return []
+            return [], {
+                "candidate_urls_count": 0,
+                "candidate_urls": [],
+                "duplicate_urls": [],
+                "rejected_scope_urls": [],
+                "missing_urls": [],
+            }
 
         soup = BeautifulSoup(html, "lxml")
         items: List[Dict[str, Any]] = []
         seen_urls = set()
+        candidate_urls: List[str] = []
+        duplicate_urls: List[str] = []
+        rejected_scope_urls: List[str] = []
         scope = self._build_listing_scope(base_url)
 
         listing_cards = self._find_listing_cards(soup)
@@ -366,9 +376,12 @@ class NjuskaloAutoScraper:
                 continue
 
             full_url = urljoin(base_url, href)
+            candidate_urls.append(full_url)
             if full_url in seen_urls:
+                duplicate_urls.append(full_url)
                 continue
             if not self._is_relevant_listing_url(full_url, scope):
+                rejected_scope_urls.append(full_url)
                 continue
 
             title = link.get_text(" ", strip=True)
@@ -390,7 +403,23 @@ class NjuskaloAutoScraper:
                 "mileage": mileage,
             })
 
-        return items
+        unique_candidates: List[str] = []
+        seen_candidates = set()
+        for url in candidate_urls:
+            if url in seen_candidates:
+                continue
+            seen_candidates.add(url)
+            unique_candidates.append(url)
+
+        missing_urls = [url for url in unique_candidates if url not in seen_urls]
+
+        return items, {
+            "candidate_urls_count": len(unique_candidates),
+            "candidate_urls": unique_candidates[:50],
+            "duplicate_urls": duplicate_urls[:20],
+            "rejected_scope_urls": rejected_scope_urls[:20],
+            "missing_urls": missing_urls[:20],
+        }
 
     def _find_listing_cards(self, soup: BeautifulSoup) -> List[Any]:
         """Return article nodes from the main search result list only."""
@@ -428,14 +457,17 @@ class NjuskaloAutoScraper:
         if len(parts) < 2:
             return False
 
-        category = scope.get("category", "")
-        if category and parts[0] != category:
+        # Accept both /auti/ (used) and /novi-auti/ (new) categories
+        category = parts[0]
+        if category not in ["auti", "novi-auti"]:
             return False
 
         slug = scope.get("slug", "")
         requested_category = scope.get("requested_category", "")
-        if slug and requested_category == "auti" and not parts[1].startswith(f"{slug}-"):
-            return False
+        if slug and requested_category == "auti":
+            # Accept both direct slug and rabljeno-vozilo- prefix variations
+            if not (parts[1].startswith(f"{slug}-") or parts[1].startswith(f"rabljeno-vozilo-{slug}")):
+                return False
 
         return True
 

@@ -1,307 +1,481 @@
 {
   "scrape_metadata": {
-    "timestamp": "2026-07-28T10:35:51.995042",
+    "timestamp": "2026-07-28T13:45:17.744559",
     "total_pages_scraped": 2,
-    "listings_count": 32
+    "listings_count": 46
   },
   "pages": [
     {
       "metadata": {
-        "url": "https://www.njuskalo.hr/auti/infiniti",
-        "title": "Infiniti vozila, Infiniti oglasi - oglasnik Njuškalo",
-        "description": "Infiniti vozila: prodaja Infiniti auta iz cijele Hrvatske. Oglasi: slika + cijena + detaljan opis Infiniti automobila.",
-        "scraped_at": "2026-07-28T10:35:46.906605",
+        "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe",
+        "title": "Hyundai Santa Fe vozila - Hyundai Santa Fe oglasi - Njuškalo",
+        "description": "Hyundai Santa Fe vozila: prodaja Hyundai Santa Fe auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Hyundai Santa Fe automobila",
+        "scraped_at": "2026-07-28T13:45:12.517635",
         "success": true,
         "status_code": 200
       },
-      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/infiniti#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [**Infiniti**](https://www.njuskalo.hr/auti/infiniti)\n\n\n#  **Infiniti**\nProdaja vozila Infiniti u oglasima sa slikom i cijenom Infiniti automobila.\n  * [Infiniti EX30](htt",
-      "raw_html_length": 330599,
-      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Infiniti vozila, Infiniti oglasi - oglasnik Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Cs2_0Q6vC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/28jjxBGe2.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BFDo_7ljB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel=\"stylesheet\" href=\"https",
+      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/hyundai-santa-fe#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Hyundai](https://www.njuskalo.hr/auti/hyundai)\n  * [**Santa Fe**](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n\n\n#  **Hyundai Santa Fe**\nHyundai Santa Fe vozila",
+      "raw_html_length": 327009,
+      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Hyundai Santa Fe vozila - Hyundai Santa Fe oglasi - Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Cs2_0Q6vC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BFDo_7ljB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CITPUagGC.css\">\n<link rel=\"stylesheet\" hre",
       "sample_listing_titles": [],
       "sample_listing_titles_count": 0,
-      "extracted_listings_count": 24,
+      "extracted_listings_count": 25,
+      "listing_debug": {
+        "candidate_urls_count": 25,
+        "candidate_urls": [
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4wd-htrac-luxury-bogata-oprema-top-stanje-oglas-50915124",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-50121929",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-signature-ful-oprema-oglas-46125535",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-reg-3-2027-274000-km-oglas-50897091",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.0-crdi-gls-oglas-50701633",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-oglas-47752233",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.7-v6-gls-oglas-50524087",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-led-4x4-kamera-kuka-oglas-51038866",
+          "https://www.njuskalo.hr/novi-auti/hyundai-santa-fe-plug-in-hybrid-1.6-t-gdi-6at-4wd-style-5-oglas-48635877",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-46997102",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4wd-oglas-50631045",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-8-dct-7-sjedala-panorama-hud-acc-360-oglas-50402464",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-hybrid-4x4-signature-7-sjedala-siber-hud-acc-jamstvo-oglas-50399902",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-auto-premium-7-sjedala-koza-kamera360-oglas-41424593",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-grand-4x4-premium-6-sjedala-acc-bixenon-2018-oglas-41419760",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-grand-4x4-auto-7-sjed-premium-navi-kam-xeno-oglas-41410216",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-style-panorama-koza-navi-kamera-xenon-oglas-41408676",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6t-4wd-aut-215-ks-acc-360-4xgr-sjed-pano-head-asi-oglas-50984770",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-phev-wltp-69km-prime-panorama-hud-acc-kamera-360-oglas-50377356",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4wd-oglas-50832483",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-8-dct-signature-panorama-hud-acc-360-oglas-50327001",
+          "https://www.njuskalo.hr/novi-auti/hyundai-santa-fe-hybrid-1.6-t-gdi-2wd-7sjed-style-oglas-50890118",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-sport-gdi-automatik-oglas-50216286",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-4wd-prvi-vlasnik-oglas-50679206",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.0-dohc-oglas-49103147"
+        ],
+        "duplicate_urls": [],
+        "rejected_scope_urls": [],
+        "missing_urls": []
+      },
       "extracted_content": {
-        "lines_count": 478,
-        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/infiniti#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [**Infiniti**](https://www.njuskalo.hr/auti/infiniti)\n\n\n#  **Infiniti**\nProdaja vozila Infiniti u oglasima sa slikom i cijenom Infiniti automobila.\n  * [Infiniti EX30](https://www.njuskalo.hr/auti/infiniti-ex30) 1\n  * [Infiniti FX](https://www.njuskalo.hr/auti/infiniti-fx) 1\n  * [Infiniti FX30](https://www.njuskalo.hr/auti/infiniti-fx30) 1\n\n\n  * [Infiniti Q30](https://www.njuskalo.hr/auti/infiniti-q30) 14\n  * [Infiniti Q50](https://www.njuskalo.hr/auti/infiniti-q50) 11\n  * [Infiniti Q60](https://www.njuskalo.hr/auti/infiniti-q60) 3"
+        "lines_count": 449,
+        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/hyundai-santa-fe#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Hyundai](https://www.njuskalo.hr/auti/hyundai)\n  * [**Santa Fe**](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n\n\n#  **Hyundai Santa Fe**\nHyundai Santa Fe vozila: prodaja Hyundai Santa Fe auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Hyundai Santa Fe automobila.\nPozicioniranje na listi može biti određeno različitim parametrima. [Saznaj više](https://www.njuskalo.hr/help/kontakt-i-pomoc/njuskalo-osnove/pozicioniranje-oglasa-cid375)\n  * [**1**](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n  * [2](https://www.njuskalo.hr/auti/hyundai-santa-fe?page=2)\n  * [Sljedeća »](https://www.njuskalo.hr/auti/hyundai-santa-fe?page=2)\n\n\n**46** oglasa"
       }
     },
     {
       "metadata": {
-        "url": "https://www.njuskalo.hr/auti/infiniti?page=2",
-        "title": "Infiniti vozila, Infiniti oglasi - oglasnik Njuškalo",
-        "description": "Infiniti vozila: prodaja Infiniti auta iz cijele Hrvatske. Oglasi: slika + cijena + detaljan opis Infiniti automobila.",
-        "scraped_at": "2026-07-28T10:35:51.879353",
+        "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe?page=2",
+        "title": "Hyundai Santa Fe vozila - Hyundai Santa Fe oglasi - Njuškalo",
+        "description": "Hyundai Santa Fe vozila: prodaja Hyundai Santa Fe auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Hyundai Santa Fe automobila",
+        "scraped_at": "2026-07-28T13:45:17.607217",
         "success": true,
         "status_code": 200
       },
-      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/infiniti?page=2#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [**Infiniti**](https://www.njuskalo.hr/auti/infiniti)\n\n\n#  **Infiniti**\nProdaja vozila Infiniti u oglasima sa slikom i cijenom Infiniti automobila.\n  * [Infiniti EX",
-      "raw_html_length": 212381,
-      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Infiniti vozila, Infiniti oglasi - oglasnik Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Cs2_0Q6vC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CITPUagGC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/B4o5d-QvB.css\">\n<link rel=\"stylesheet\" href=\"https",
+      "raw_content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/hyundai-santa-fe?page=2#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Hyundai](https://www.njuskalo.hr/auti/hyundai)\n  * [**Santa Fe**](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n\n\n#  **Hyundai Santa Fe**\nHyundai Santa Fe",
+      "raw_html_length": 259216,
+      "raw_html": "<!DOCTYPE html><html lang=\"hr\" class=\"js BannerHelper--sticky\"><head> \n  \n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0,shrink-to-fit=no\">\n<title>Hyundai Santa Fe vozila - Hyundai Santa Fe oglasi - Njuškalo</title>\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\">\n<link rel=\"preconnect\" href=\"https://static.njuskalo.hr/\" crossorigin=\"\">\n<link rel=\"preconnect\" href=\"https://sdk.privacy-center.org\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CweUi1iWC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DVrlSSJyD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CekoMz-IC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DU3XUrnTD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CSdGL2NmC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/c5_gP4RBc.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BOR8UaGXB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Bkk36YUxB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/D6nbFE4cD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CjJD0X4hC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Cs2_0Q6vC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BYt5RbBGB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/ELjHvALUE.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/OhDwT5R-O.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/BVfUNkfhB.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Du-VkJF0D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/Dx6b6-imD.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/DuiX6A33D.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/CITPUagGC.css\">\n<link rel=\"stylesheet\" href=\"https://static.njuskalo.hr/dist/B4o5d-QvB.css\">\n<link",
       "sample_listing_titles": [],
       "sample_listing_titles_count": 0,
-      "extracted_listings_count": 8,
+      "extracted_listings_count": 21,
+      "listing_debug": {
+        "candidate_urls_count": 21,
+        "candidate_urls": [
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6t-gdi-hev-4wd-kozna-sj-premium-38.900-reg-oglas-50834474",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.7-v6-oglas-50549536",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-oglas-50716066",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.7-v6-gls-oglas-50715537",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-50327623",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-50634399",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6-t-gdi-4wd-aut-blackline-215-ks-acc-kam-gr-sjed-oglas-50596450",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6-t-gdi-aut-signature-215-ks-acc-360-key-gr-sjed-oglas-50596439",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6-t-gdi-4wd-aut-signature-253-ks-acc-360-gr-sjed-oglas-50596409",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2003-god-4x4-automatski-mjenjac-kozna-sjedala-oglas-50584337",
+          "https://www.njuskalo.hr/auti/rabljeno-vozilo-hyundai-santa-fe-2.2-crdi-automatic-4x4-diesel-oglas-50560114",
+          "https://www.njuskalo.hr/novi-auti/hyundai-santa-fe-1.6-oglas-45325081",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-prime-hybrid-samo-16.000-km-oglas-50394767",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-trend-hybrid-4wd-oglas-50394442",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-prime-plug-in-40g-uvozimo-osobna-teretna-vozila-oglas-50160400",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatic-4x4-29.560.00-nije-pdv-oglas-50134936",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-40-g-uvozimo-osobna-teretna-vozila-oglas-49584108",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-40-g-uvozimo-osobna-teretna-vozila-oglas-49307023",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-registriran-godinu-dana-oglas-48423795",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-signature-hybrid-koza-360kam-bose-navi-oglas-48411257",
+          "https://www.njuskalo.hr/auti/hyundai-santa-fe-premium-4wd-2.2-crdi-360kam-pano-memo-koza-oglas-48411182"
+        ],
+        "duplicate_urls": [],
+        "rejected_scope_urls": [],
+        "missing_urls": []
+      },
       "extracted_content": {
-        "lines_count": 295,
-        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/infiniti?page=2#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [**Infiniti**](https://www.njuskalo.hr/auti/infiniti)\n\n\n#  **Infiniti**\nProdaja vozila Infiniti u oglasima sa slikom i cijenom Infiniti automobila.\n  * [Infiniti EX30](https://www.njuskalo.hr/auti/infiniti-ex30) 1\n  * [Infiniti FX](https://www.njuskalo.hr/auti/infiniti-fx) 1\n  * [Infiniti FX30](https://www.njuskalo.hr/auti/infiniti-fx30) 1\n\n\n  * [Infiniti Q30](https://www.njuskalo.hr/auti/infiniti-q30) 14\n  * [Infiniti Q50](https://www.njuskalo.hr/auti/infiniti-q50) 11\n  * [Infiniti Q60](https://www.njuskalo.hr/auti/infiniti-q60) 3"
+        "lines_count": 408,
+        "content_preview": "[Otvori meni](https://www.njuskalo.hr/auti/hyundai-santa-fe?page=2#nav-main)[Njuškalo naslovnica](https://www.njuskalo.hr/)\nPretraži\n[Predaj oglas](https://www.njuskalo.hr/predaja-oglasa)\n  * [Oglasnik](https://www.njuskalo.hr/)\n  * …\n  * [Auto Moto](https://www.njuskalo.hr/auto-moto)\n  * [Osobni automobili](https://www.njuskalo.hr/auti)\n  * [Hyundai](https://www.njuskalo.hr/auti/hyundai)\n  * [**Santa Fe**](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n\n\n#  **Hyundai Santa Fe**\nHyundai Santa Fe vozila: prodaja Hyundai Santa Fe auta iz cijele Hrvatske u malim oglasima sa slikama i cijenama Hyundai Santa Fe automobila.\nPozicioniranje na listi može biti određeno različitim parametrima. [Saznaj više](https://www.njuskalo.hr/help/kontakt-i-pomoc/njuskalo-osnove/pozicioniranje-oglasa-cid375)\n  * [« Prethodna](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n  * [1](https://www.njuskalo.hr/auti/hyundai-santa-fe)\n  * [**2**](https://www.njuskalo.hr/auti/hyundai-santa-fe?page=2)\n\n\n**46** oglasa"
       }
     }
   ],
   "listings": [
     {
-      "title": "Infiniti Q30 1,5 D,AUTOMATIC,NAVIGACIJA,KAMERA,GR.SJ,HR AUTO,REG.12/26",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5-d-automatic-navigacija-kamera-gr-sj-hr-auto-reg-12-26-oglas-50600766",
-      "price": "13.999 €",
-      "location": "Osijek, Industrijska zona (Čepinska)",
-      "year": 2016,
-      "mileage": "110.000 km"
+      "title": "HYUNDAI SANTA FE 2.2 CRDi 4WD HTRAC LUXURY - BOGATA OPREMA-TOP STANJE",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4wd-htrac-luxury-bogata-oprema-top-stanje-oglas-50915124",
+      "price": "29.650 €",
+      "location": "Koprivnica, Podolice",
+      "year": 2019,
+      "mileage": "93.000 km"
     },
     {
-      "title": "Infiniti Q50 2,2 Diesel Automatik Sport Tech paket REG 10/2026",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-2.2-diesel-automatik-sport-tech-paket-oglas-46650085",
-      "price": "16.900 €",
-      "location": "Sesvete, Kraljevečki Novaki",
-      "year": 2017,
-      "mileage": "119.000 km"
+      "title": "Hyundai Santa Fe 2,2 CRDi",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-50121929",
+      "price": "29.400 €",
+      "location": "Pula, Valdebek",
+      "year": 2019,
+      "mileage": "90.000 km"
     },
     {
-      "title": "Infiniti Q30S 1,5d,2016.god.NAVI,BOSE,LED,BIXENON,alu 19”PANORAMA!",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30s-1.5d-2016-god-navi-bose-led-bixenon-alu-19-panorama-oglas-48619816",
-      "price": "11.999 €",
-      "location": "Sisak, Galdovo",
-      "year": 2016,
-      "mileage": "242.123 km"
+      "title": "Hyundai Santa Fe phev Signature ful oprema  Cijena novoga 64000e",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-signature-ful-oprema-oglas-46125535",
+      "price": "43.400 €",
+      "location": "Velika Gorica, Kromosovo naselje",
+      "year": 2022,
+      "mileage": "19.450 km"
     },
     {
-      "title": "Infiniti Q50 2,2 d automatik 90TKM nije uvoz reg godinu dana",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-2.2-d-automatik-88tkm-nije-uvoz-kao-nov-oglas-50310059",
-      "price": "15.499 €",
-      "location": "Donja Dubrava, Donja Dubrava",
-      "year": 2016,
-      "mileage": "92.000 km"
-    },
-    {
-      "title": "Infiniti Q50 3.5 V6 hybrid automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-3.5-v6-hybrid-automatik-oglas-49775951",
-      "price": "16.000 €",
-      "location": "Osijek, Industrijska zona (Čepinska)",
-      "year": 2018,
-      "mileage": "193.000 km"
-    },
-    {
-      "title": "Infiniti Q30 2,2 D automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-2.2-d-automatik-oglas-51038536",
-      "price": "15.000 €",
-      "location": "Ražanac, Ražanac",
-      "year": 2017,
-      "mileage": "143.000 km"
-    },
-    {
-      "title": "Infiniti Q50 2,2 Diesel",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-2.2-diesel-oglas-50028715",
-      "price": "14.500 €",
-      "location": "Osijek, Cvjetno naselje",
-      "year": 2016,
-      "mileage": "175.490 km"
-    },
-    {
-      "title": "Infiniti Q50 2,2 d",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-2.2-d-oglas-51040502",
+      "title": "Hyundai Santa Fe 2,2 CRDi  reg 3/2027,  274000 km",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-reg-3-2027-274000-km-oglas-50897091",
       "price": "6.900 €",
-      "location": "Trešnjevka - Sjever, Trešnjevka",
+      "location": "Dugo Selo, Dugo Selo - Centar",
+      "year": 2008,
+      "mileage": "274.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,0 CRDi GLS",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.0-crdi-gls-oglas-50701633",
+      "price": "3.200 €",
+      "location": "Staro Petrovo Selo, Staro Petrovo Selo",
+      "year": 2002,
+      "mileage": "300.000 km"
+    },
+    {
+      "title": "⭐Hyundai Santa Fe 2,2 CRDi◽HR AUTO◽PRIVAT◽7 SJEDALA◽ODLIČAN⭐",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-oglas-47752233",
+      "price": "15.250 €",
+      "location": "Podsused - Vrapče, Podsused",
+      "year": 2015,
+      "mileage": "237.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,7 V6 GLS PLIN 4X4",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.7-v6-gls-oglas-50524087",
+      "price": "1.250 €",
+      "location": "Dvor, Unčani",
+      "year": 2004,
+      "mileage": "25.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi+LED+4X4+KAMERA+KUKA",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-led-4x4-kamera-kuka-oglas-51038866",
+      "price": "13.490 €",
+      "location": "Slovenija",
+      "year": 2015,
+      "mileage": "188.250 km"
+    },
+    {
+      "title": "HYUNDAI SANTA FE PLUG-IN HYBRID 1,6 T-GDI 6AT 4WD STYLE 5",
+      "url": "https://www.njuskalo.hr/novi-auti/hyundai-santa-fe-plug-in-hybrid-1.6-t-gdi-6at-4wd-style-5-oglas-48635877",
+      "price": "53.071 €",
+      "location": "Stenjevec, Jankomir Objavljen: 20.07.2026.",
+      "year": null,
+      "mileage": ""
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi automatik",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-46997102",
+      "price": "32.500 €",
+      "location": "Kaštela, Kaštel Novi",
+      "year": 2022,
+      "mileage": "140.000 km"
+    },
+    {
+      "title": "HYUNDAI SANTA FE 2.2 CRDI 4WD",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4wd-oglas-50631045",
+      "price": "40.900 €",
+      "location": "",
+      "year": 2021,
+      "mileage": "92.705 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2.2 CRDi 4X4 8-DCT 7-SJEDALA PANORAMA HUD ACC 360",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-8-dct-7-sjedala-panorama-hud-acc-360-oglas-50402464",
+      "price": "35.499 €",
+      "location": "Njemačka",
+      "year": 2022,
+      "mileage": "71.500 km"
+    },
+    {
+      "title": "Hyundai Santa Fe HYBRID 4X4  SIGNATURE 7-SJEDALA ŠIBER HUD ACC JAMSTVO",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-hybrid-4x4-signature-7-sjedala-siber-hud-acc-jamstvo-oglas-50399902",
+      "price": "38.980 €",
+      "location": "Njemačka",
+      "year": 2023,
+      "mileage": "36.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi 4X4 AUTO. PREMIUM 7-SJ. PANORAMA KOŽA KAM360",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-auto-premium-7-sjedala-koza-kamera360-oglas-41424593",
+      "price": "25.490 €",
+      "location": "Njemačka",
+      "year": 2019,
+      "mileage": "121.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi GRAND 4X4 PREMIUM 6-SJEDALA ACC BIXENON 2018",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-grand-4x4-premium-6-sjedala-acc-bixenon-2018-oglas-41419760",
+      "price": "24.880 €",
+      "location": "Njemačka",
+      "year": 2018,
+      "mileage": "99.900 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi 4X4 AUTO. 7-SJEDALA PREMIUM NAVI KAM XENON",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-grand-4x4-auto-7-sjed-premium-navi-kam-xeno-oglas-41410216",
+      "price": "15.990 €",
+      "location": "Njemačka",
+      "year": 2016,
+      "mileage": "146.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi 4X4 STYLE PANORAMA KOŽA NAVI KAMERA XENON",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-style-panorama-koza-navi-kamera-xenon-oglas-41408676",
+      "price": "14.900 €",
+      "location": "Njemačka",
       "year": 2014,
+      "mileage": "147.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 1.6T 4WD Aut. 215 KS, ACC+360+4xGR SJED+PANO+HEAD+ASI",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6t-4wd-aut-215-ks-acc-360-4xgr-sjed-pano-head-asi-oglas-50984770",
+      "price": "51.950 €",
+      "location": "Njemačka Objavljen: 14.07.2026.",
+      "year": 2025,
+      "mileage": "29.959 km"
+    },
+    {
+      "title": "Hyundai Santa Fe PHEV 4X4 WLTP 69KM PRIME PANORAMA HUD ACC KAMERA360",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-phev-wltp-69km-prime-panorama-hud-acc-kamera-360-oglas-50377356",
+      "price": "30.990 €",
+      "location": "Njemačka",
+      "year": 2021,
+      "mileage": "50.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi 4WD",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4wd-oglas-50832483",
+      "price": "6.500 €",
+      "location": "Kaštela, Kaštel Stari",
+      "year": 2006,
       "mileage": "220.000 km"
     },
     {
-      "title": "Infiniti QX30 2,2 D automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-qx30-2.2-d-automatik-oglas-51033649",
-      "price": "16.000 €",
-      "location": "Koprivnica - Okolica, Draganovec",
-      "year": 2017,
-      "mileage": "80.000 km"
+      "title": "Hyundai Santa Fe 2.2 CRDi 4X4 8-DCT SIGNATURE PANORAMA HUD ACC 360",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-4x4-8-dct-signature-panorama-hud-acc-360-oglas-50327001",
+      "price": "34.990 €",
+      "location": "Njemačka",
+      "year": 2023,
+      "mileage": "70.000 km"
     },
     {
-      "title": "INFINITI Q30 1,5 D NAVIGACIJA,TEMPOMAT,GR.SJEDALA,PDC,ALU 18 !!!",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5-d-navigacija-tempomat-koza-gr-sjedala-pdc-alu-18-oglas-50412683",
-      "price": "12.900 €",
-      "location": "Maksimir, Maksimir",
-      "year": 2018,
-      "mileage": "92.900 km"
+      "title": "HYUNDAI SANTA FE HYBRID 1,6 T-GDI 2WD 7SJED STYLE",
+      "url": "https://www.njuskalo.hr/novi-auti/hyundai-santa-fe-hybrid-1.6-t-gdi-2wd-7sjed-style-oglas-50890118",
+      "price": "51.167,52 €",
+      "location": "Čakovec, Globetka Objavljen: 29.06.2026.",
+      "year": null,
+      "mileage": ""
     },
     {
-      "title": "Infiniti Q30 1,5 d DCT ☆Automatik☆1God reg☆Odličan☆",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5-d-dct-automatik-1god-reg-odlican-oglas-51025812",
-      "price": "11.999,99 €",
-      "location": "Velika Gorica, Centar",
-      "year": 2017,
-      "mileage": "139.000 km"
-    },
-    {
-      "title": "Infiniti Q30 2,2 D AWD - HR vozilo - panorama, mem. sjedala, BOSE, 18\"",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-2.2-d-awd-hr-vozilo-panorama-mem-sjedala-bose-18-oglas-50732907",
-      "price": "21.500 €",
-      "location": "Gornji Grad - Medveščak, Britanac",
-      "year": 2018,
-      "mileage": "57.225 km"
-    },
-    {
-      "title": "Infiniti Q50 S Hybrid Automatik 364 ks, FULL oprema",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-hybrid-automatik-306ks-full-oprema-ekstra-stanje-oglas-49012685",
-      "price": "14.999 €",
-      "location": "Sesvete, Vretenec",
-      "year": 2014,
-      "mileage": "177.000 km"
-    },
-    {
-      "title": "Infiniti Q30 2,2 D",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-2.2-d-oglas-51004904",
-      "price": "15.400 €",
-      "location": "Bistra, Donja Bistra",
-      "year": 2016,
-      "mileage": "139.000 km"
-    },
-    {
-      "title": "Infiniti Q30 1.5d Premium | 170.000 km | Veliki servis | 360 kamera |",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5d-premium-170.000-km-veliki-servis-360-kamera-oglas-50805628",
-      "price": "12.490 €",
-      "location": "Gornja Dubrava, Gornja Dubrava",
-      "year": 2016,
-      "mileage": "171.000 km"
-    },
-    {
-      "title": "Infiniti EX30 30d automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-ex30-30d-automatik-oglas-50989251",
-      "price": "13.000 €",
-      "location": "Velika Gorica - Okolica, Gradići",
+      "title": "Hyundai Santa Fe Sport GDI automatik",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-sport-gdi-automatik-oglas-50216286",
+      "price": "8.999,99 €",
+      "location": "Osijek - Okolica, Josipovac",
       "year": 2013,
-      "mileage": "255.000 km"
+      "mileage": "187.000 km"
     },
     {
-      "title": "Infiniti Q30 1,5d IZVRSTAN NAVI-PARK-ALU(GLA 180d)",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5d-izvrstan-navi-park-alu-oglas-47234387",
-      "price": "12.499 €",
-      "location": "Varaždin, Centar",
-      "year": 2016,
-      "mileage": "181.000 km"
-    },
-    {
-      "title": "Infiniti Q70 2.2D PREMIUM - NIJE UVOZ - POVOLJNO",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q70-2.2d-premium-oglas-49955574",
-      "price": "9.990 €",
-      "location": "Osijek, Gornji grad / Centar",
-      "year": 2016,
-      "mileage": "208.000 km"
-    },
-    {
-      "title": "Infiniti FX 30d GT automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-fx-30d-gt-automatik-oglas-50781737",
+      "title": "Hyundai Santa Fe 2.2 CRDi automatik 4WD / prvi vlasnik",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-4wd-prvi-vlasnik-oglas-50679206",
       "price": "12.500 €",
-      "location": "Čakovec, Globetka",
-      "year": 2012,
-      "mileage": "275.000 km"
+      "location": "Osijek, Industrijska zona (Čepinska)",
+      "year": 2013,
+      "mileage": "227.000 km"
     },
     {
-      "title": "Infiniti QX50 2.0i Exclusive/Bose /Pano /Alcantara /3Colore",
-      "url": "https://www.njuskalo.hr/auti/infiniti-qx50-2.0i-exclusive-bose-pano-alcantara-3colore-oglas-50769584",
+      "title": "Hyundai Santa Fe 2.0 DOHC",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.0-dohc-oglas-49103147",
+      "price": "2.900 €",
+      "location": "Trogir, Dragulin",
+      "year": 2003,
+      "mileage": "220.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 1.6T-GDi HEV 4WD Kožna sj.Premium€38.900 do reg.!",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6t-gdi-hev-4wd-kozna-sj-premium-38.900-reg-oglas-50834474",
+      "price": "38.900 €",
+      "location": "Njemačka",
+      "year": 2023,
+      "mileage": "53.300 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,7 V6 LPG",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.7-v6-oglas-50549536",
+      "price": "5.000 €",
+      "location": "Gornja Dubrava, Studentski grad",
+      "year": 2009,
+      "mileage": "300.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-oglas-50716066",
+      "price": "10.000 €",
+      "location": "Gornji Grad - Medveščak, Šalata",
+      "year": 2011,
+      "mileage": "178.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,7 V6 GLS",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.7-v6-gls-oglas-50715537",
+      "price": "4.500 €",
+      "location": "Čepin, Čepin",
+      "year": 2006,
+      "mileage": "337.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi automatik",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-50327623",
+      "price": "9.000 €",
+      "location": "Slavonski Brod, Livada",
+      "year": 2010,
+      "mileage": "230.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi automatik",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatik-oglas-50634399",
+      "price": "24.500 €",
+      "location": "Velika Gorica, Galženica",
+      "year": 2019,
+      "mileage": "109.300 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 1.6 T-GDI 4WD Aut. Blackline 215 KS, ACC+KAM+GR SJED+",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6-t-gdi-4wd-aut-blackline-215-ks-acc-kam-gr-sjed-oglas-50596450",
+      "price": "49.550 €",
+      "location": "Njemačka",
+      "year": 2024,
+      "mileage": "59.159 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 1.6 T-GDI Aut. Signature 215 KS, ACC+360+KEY+GR SJED+",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6-t-gdi-aut-signature-215-ks-acc-360-key-gr-sjed-oglas-50596439",
+      "price": "52.400 €",
+      "location": "Njemačka Objavljen: 14.05.2026.",
+      "year": 2025,
+      "mileage": "22.496 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 1.6 T-GDi 4WD Aut. Signature 253 KS, ACC+360+GR SJED+",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-1.6-t-gdi-4wd-aut-signature-253-ks-acc-360-gr-sjed-oglas-50596409",
+      "price": "52.800 €",
+      "location": "Njemačka Objavljen: 14.05.2026.",
+      "year": 2024,
+      "mileage": "31.847 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2003. god - 4x4, automatski mjenjač, kožna sjedala",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2003-god-4x4-automatski-mjenjac-kozna-sjedala-oglas-50584337",
+      "price": "3.000 €",
+      "location": "Podsused - Vrapče, Susedgrad",
+      "year": 2003,
+      "mileage": "374.359 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2.2 CRDI Automatic 4x4",
+      "url": "https://www.njuskalo.hr/auti/rabljeno-vozilo-hyundai-santa-fe-2.2-crdi-automatic-4x4-diesel-oglas-50560114",
+      "price": "38.790 €",
+      "location": "Stenjevec, Jankomir",
+      "year": 2023,
+      "mileage": "112.887 km"
+    },
+    {
+      "title": "NOVI Hyundai Santa Fe PHEV Luxury",
+      "url": "https://www.njuskalo.hr/novi-auti/hyundai-santa-fe-1.6-oglas-45325081",
+      "price": "69.990 €",
+      "location": "Slavonski Brod, Budainka Objavljen: 07.05.2026.",
+      "year": null,
+      "mileage": ""
+    },
+    {
+      "title": "Hyundai Santa Fe Prime Hybrid *samo 16.000 km*",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-prime-hybrid-samo-16.000-km-oglas-50394767",
+      "price": "44.450 €",
+      "location": "Njemačka",
+      "year": 2023,
+      "mileage": "16.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe Trend Hybrid 4WD",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-trend-hybrid-4wd-oglas-50394442",
+      "price": "41.720 €",
+      "location": "Njemačka",
+      "year": 2023,
+      "mileage": "29.381 km"
+    },
+    {
+      "title": "Hyundai Santa Fe Prime Plug-in * 40g uvozimo osobna i teretna vozila *",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-prime-plug-in-40g-uvozimo-osobna-teretna-vozila-oglas-50160400",
+      "price": "25.185 €",
+      "location": "Njemačka",
+      "year": 2022,
+      "mileage": "51.175 km"
+    },
+    {
+      "title": "Rabljeno vozilo Hyundai Santa Fe 2.2 CRDI Automatic 4x4, Diesel, Akcij",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-automatic-4x4-29.560.00-nije-pdv-oglas-50134936",
+      "price": "27.500 €",
+      "location": "Stenjevec, Jankomir",
+      "year": 2019,
+      "mileage": "148.503 km"
+    },
+    {
+      "title": "Hyundai Santa Fe 2,2 CRDi *40 g.uvozimo osobna i teretna vozila",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-40-g-uvozimo-osobna-teretna-vozila-oglas-49584108",
       "price": "25.000 €",
-      "location": "Sveta Nedelja, Novaki",
-      "year": 2019,
-      "mileage": "167.165 km"
-    },
-    {
-      "title": "Infiniti Q30 1,5 d",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5-d-oglas-47652454",
-      "price": "10.999,99 €",
-      "location": "Gornja Dubrava, Gornja Dubrava",
-      "year": 2016,
-      "mileage": "98.000 km"
-    },
-    {
-      "title": "Infiniti Q50 3,5 automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-3.5-automatik-oglas-50888498",
-      "price": "27.000 €",
-      "location": "Split, Marjan",
-      "year": 2018,
-      "mileage": "86.000 km"
-    },
-    {
-      "title": "Infiniti Q50 3.5 Hybrid AWD | Ekran | V6 + elektro | Full oprema,2016",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-3.5-hybrid-awd-364-ks-v6-elektro-full-oprema-2016-oglas-50216237",
-      "price": "14.999 €",
-      "location": "Maksimir, Srebrnjak",
-      "year": 2016,
-      "mileage": "162.000 km"
-    },
-    {
-      "title": "Infiniti Q30 1,5 d DCT",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5-d-dct-oglas-50515492",
-      "price": "13.600 €",
-      "location": "Dugo Selo, Dugo Selo - Zapad",
-      "year": 2017,
-      "mileage": "156.000 km"
-    },
-    {
-      "title": "Infiniti Q50 2,2 d automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-2.2-d-automatik-oglas-49837575",
-      "price": "7.000 €",
-      "location": "Peščenica - Žitnjak, Žitnjak",
-      "year": 2015,
-      "mileage": "155.000 km"
-    },
-    {
-      "title": "Infiniti FX30 30d GT automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-fx30-30d-gt-automatik-oglas-50703046",
-      "price": "13.900 €",
-      "location": "Ilok, Ilok",
-      "year": 2012,
-      "mileage": "200.000 km"
-    },
-    {
-      "title": "Infiniti Q60 2,0T automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q60-2.0t-automatik-oglas-45597824",
-      "price": "26.500 €",
-      "location": "Peščenica - Žitnjak, Trstik",
-      "year": 2019,
-      "mileage": "100.000 km"
-    },
-    {
-      "title": "Infiniti Q50 2,2 D automatik",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-2.2-d-automatik-oglas-50181210",
-      "price": "9.690 €",
-      "location": "Velika Gorica - Okolica, Velika Mlaka",
-      "year": 2016,
-      "mileage": "215.000 km"
-    },
-    {
-      "title": "Infiniti Q50",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q50-oglas-50525743",
-      "price": "10.700 €",
-      "location": "Novi Zagreb - Istok, Dugave",
-      "year": 2016,
-      "mileage": "186.000 km"
-    },
-    {
-      "title": "Infiniti Q60 2.0t*SPORT TECH *360°*LED*ACC*BOSE*",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q60-2.0t-sport-tech-360-led-acc-bose-oglas-50524765",
-      "price": "27.390 €",
       "location": "Njemačka",
-      "year": 2018,
-      "mileage": "87.787 km"
+      "year": 2023,
+      "mileage": "80.850 km"
     },
     {
-      "title": "Infiniti Q60 2.0T AT Sport GT *Maxton*",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q60-2.0t-at-sport-gt-maxton-oglas-50524165",
-      "price": "28.190 €",
+      "title": "Hyundai Santa Fe 2,2 CRDi *40 g.uvozimo osobna i teretna vozila",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-40-g-uvozimo-osobna-teretna-vozila-oglas-49307023",
+      "price": "27.689 €",
       "location": "Njemačka",
-      "year": 2018,
-      "mileage": "117.000 km"
+      "year": 2023,
+      "mileage": "34.927 km"
     },
     {
-      "title": "Infiniti Q30 1,5 d *40 g.uvozimo osobna i teretna vozila po želji*",
-      "url": "https://www.njuskalo.hr/auti/infiniti-q30-1.5-d-40-g-uvozimo-osobna-teretna-vozila-zelji-oglas-48611124",
-      "price": "13.800 €",
+      "title": "Hyundai Santa Fe 2,2 CRDi * REGISTRIRAN GODINU DANA *",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-2.2-crdi-registriran-godinu-dana-oglas-48423795",
+      "price": "9.999 €",
+      "location": "Sesvete, Soblinec",
+      "year": 2008,
+      "mileage": "175.500 km"
+    },
+    {
+      "title": "Hyundai Santa Fe SIGNATURE HYBRID | KOŽA | 360KAM | BOSE | NAVI",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-signature-hybrid-koza-360kam-bose-navi-oglas-48411257",
+      "price": "55.290 €",
+      "location": "Njemačka Objavljen: 09.10.2025.",
+      "year": 2025,
+      "mileage": "30.000 km"
+    },
+    {
+      "title": "Hyundai Santa Fe Premium 4WD 2.2 CRDi | 360KAM | PANO | MEMO | KOŽA",
+      "url": "https://www.njuskalo.hr/auti/hyundai-santa-fe-premium-4wd-2.2-crdi-360kam-pano-memo-koza-oglas-48411182",
+      "price": "35.190 €",
       "location": "Njemačka",
-      "year": 2018,
-      "mileage": "101.108 km"
+      "year": 2020,
+      "mileage": "80.050 km"
     }
   ]
 }
