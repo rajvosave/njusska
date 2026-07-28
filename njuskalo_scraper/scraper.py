@@ -378,7 +378,7 @@ class NjuskaloAutoScraper:
                 continue
 
             card_text = " ".join(card.get_text(" ", strip=True).split())
-            year, location, price = self._extract_listing_details_from_text(card_text)
+            year, location, price, mileage = self._extract_listing_details_from_text(card_text)
 
             seen_urls.add(full_url)
             items.append({
@@ -387,6 +387,7 @@ class NjuskaloAutoScraper:
                 "price": price,
                 "location": location,
                 "year": year,
+                "mileage": mileage,
             })
 
         return items
@@ -438,11 +439,12 @@ class NjuskaloAutoScraper:
 
         return True
 
-    def _extract_listing_details_from_text(self, text: str) -> tuple[Any, str, str]:
-        """Extract year, location and price from listing card text."""
+    def _extract_listing_details_from_text(self, text: str) -> tuple[Any, str, str, str]:
+        """Extract year, location, price and mileage from listing card text."""
         year = None
         location = ""
         price = ""
+        mileage = ""
 
         year_match = re.search(r"Godište automobila:\s*(\d{4})", text)
         if year_match:
@@ -462,7 +464,12 @@ class NjuskaloAutoScraper:
             best = max(amount_matches, key=self._price_sort_key)
             price = best.strip()
 
-        return year, location, price
+        # Extract mileage using the listing label seen on Njuškalo cards.
+        mileage_match = re.search(r"Rabljeno vozilo[,:]?\s*([\d.]+)\s*km\b", text, re.IGNORECASE)
+        if mileage_match:
+            mileage = f"{mileage_match.group(1)} km"
+
+        return year, location, price, mileage
 
     def _price_sort_key(self, amount: str) -> float:
         """Convert localized euro amount to numeric sort key."""
@@ -484,13 +491,22 @@ class NjuskaloAutoScraper:
                 seen_urls.add(url)
                 all_listings.append(item)
 
+        # Clean up page data by removing sample data
+        cleaned_pages = []
+        for page in self.listings:
+            cleaned_page = {
+                k: v for k, v in page.items() 
+                if k not in ["extracted_listings_sample", "extracted_listings"]
+            }
+            cleaned_pages.append(cleaned_page)
+
         return {
             "scrape_metadata": {
                 "timestamp": datetime.now().isoformat(),
                 "total_pages_scraped": len(self.listings),
                 "listings_count": len(all_listings),
             },
-            "pages": self.listings,
+            "pages": cleaned_pages,
             "listings": all_listings,
         }
     
