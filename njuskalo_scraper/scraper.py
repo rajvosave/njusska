@@ -438,7 +438,8 @@ class NjuskaloAutoScraper:
         parsed = urlparse(base_url)
         parts = _path_parts(parsed.path)
         category = parts[0] if parts else ""
-        slug = parts[-1] if parts else ""
+        # Only set slug if there's an actual model name (2+ path parts)
+        slug = parts[-1] if len(parts) > 1 else ""
         canonical_category = "auti" if category == "rabljeni-auti" else category
         return {
             "netloc": parsed.netloc.lower(),
@@ -463,8 +464,7 @@ class NjuskaloAutoScraper:
             return False
 
         slug = scope.get("slug", "")
-        requested_category = scope.get("requested_category", "")
-        if slug and requested_category == "auti":
+        if slug:
             # Accept both direct slug and rabljeno-vozilo- prefix variations
             if not (parts[1].startswith(f"{slug}-") or parts[1].startswith(f"rabljeno-vozilo-{slug}")):
                 return False
