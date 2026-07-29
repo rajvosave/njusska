@@ -52,6 +52,11 @@ def parse_args() -> argparse.Namespace:
         default=100,
         help="Maximum number of pages to scrape from pagination (default: 100)",
     )
+    parser.add_argument(
+        "--csv",
+        action="store_true",
+        help="Save listings to a CSV file in addition to JSON",
+    )
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -62,6 +67,7 @@ if __name__ == "__main__":
             headless=args.headless,
             fallback_visible_on_block=args.fallback_visible_on_block,
             max_pages=args.max_pages,
+            csv_output=args.csv,
         )
     )
     raise SystemExit(0 if ok else 1)

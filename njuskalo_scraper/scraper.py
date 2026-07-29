@@ -1,4 +1,5 @@
 import asyncio
+import csv
 import json
 import logging
 import re
@@ -32,6 +33,7 @@ class NjuskaloAutoScraper:
         headless: bool = False,
         fallback_visible_on_block: bool = False,
         max_pages: int = 100,
+        csv_output: bool = False,
     ):
         """Initialize the scraper with output file configuration.
         
@@ -40,11 +42,13 @@ class NjuskaloAutoScraper:
             headless: Whether to run browser in headless mode
             fallback_visible_on_block: Retry blocked pages in visible browser mode
             max_pages: Maximum number of pagination pages to scrape
+            csv_output: Whether to save listings to a CSV file
         """
         self.output_file = output_file
         self.headless = headless
         self.fallback_visible_on_block = fallback_visible_on_block
         self.max_pages = max(1, int(max_pages))
+        self.csv_output = csv_output
         self.listings: List[Dict[str, Any]] = []
         self.last_full_html: str = ""
         
@@ -570,6 +574,45 @@ class NjuskaloAutoScraper:
             logger.error(f"Error saving output: {e}", exc_info=True)
             raise
 
+    def save_to_csv(self) -> Optional[str]:
+        """Save extracted listings to CSV file.
+        
+        Returns:
+            Path to the CSV file, or None if no listings to save
+        """
+        output_data = self.get_output_data()
+        listings = output_data.get("listings", [])
+        
+        if not listings:
+            logger.info("No listings to save to CSV")
+            return None
+        
+        output_path = Path(self.output_file)
+        csv_file = output_path.parent / output_path.stem / ".csv"
+        csv_file = output_path.parent / (output_path.stem + ".csv")
+        
+        try:
+            with open(csv_file, 'w', encoding='utf-8', newline='') as f:
+                fieldnames = ["title", "url", "price", "location", "year", "mileage"]
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                for listing in listings:
+                    writer.writerow({
+                        "title": listing.get("title", ""),
+                        "url": listing.get("url", ""),
+                        "price": listing.get("price", ""),
+                        "location": listing.get("location", ""),
+                        "year": listing.get("year", ""),
+                        "mileage": listing.get("mileage", ""),
+                    })
+            
+            logger.info(f"CSV output saved to {csv_file}")
+            return str(csv_file)
+            
+        except Exception as e:
+            logger.error(f"Error saving CSV output: {e}", exc_info=True)
+            raise
+
 
 async def scrape_to_dict(
     url: str,
@@ -618,6 +661,7 @@ async def main(
     headless: bool = False,
     fallback_visible_on_block: bool = False,
     max_pages: int = 100,
+    csv_output: bool = False,
 ):
     """Main entry point for the scraper.
     
@@ -626,6 +670,7 @@ async def main(
         headless: Whether to run browser in headless mode.
         fallback_visible_on_block: Retry blocked pages in visible browser mode.
         max_pages: Maximum number of pages to scrape.
+        csv_output: Whether to save listings to a CSV file.
     """
     # URL for njuskalo.hr auto listings (default)
     if url is None:
@@ -637,6 +682,7 @@ async def main(
         headless=headless,
         fallback_visible_on_block=fallback_visible_on_block,
         max_pages=max_pages,
+        csv_output=csv_output,
     )
     
     # Run the scrape
@@ -649,6 +695,11 @@ async def main(
     if success:
         output_file = scraper.save_output()
         logger.info(f"Scrape completed successfully. Results saved to: {output_file}")
+        
+        if csv_output:
+            csv_file = scraper.save_to_csv()
+            if csv_file:
+                logger.info(f"CSV output saved to: {csv_file}")
     else:
         logger.error("Scrape failed. Please check the logs above.")
         return False
