@@ -467,12 +467,6 @@ class NjuskaloAutoScraper:
         if category not in ["auti", "novi-auti"]:
             return False
 
-        slug = scope.get("slug", "")
-        if slug:
-            # Accept both direct slug and rabljeno-vozilo- prefix variations
-            if not (parts[1].startswith(f"{slug}-") or parts[1].startswith(f"rabljeno-vozilo-{slug}")):
-                return False
-
         return True
 
     def _extract_listing_details_from_text(self, text: str) -> tuple[Any, str, str, str]:
